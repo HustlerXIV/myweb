@@ -25,6 +25,7 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: black;
+    height: 100vh;
   }
 }

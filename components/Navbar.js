@@ -11,13 +11,13 @@ export default function Navbar() {
   const router = useRouter();
 
   const navigation = [
-    { name: "Homepage", href: "/" },
-    { name: "About Me", href: "/about-me" },
-    { name: "My Projects", href: "/my-projects" },
+    { name: "HOMEPAGE", href: "/" },
+    { name: "ABOUT ME", href: "/about-me" },
+    { name: "MY PROJECTS", href: "/my-projects" },
   ];
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-transparent">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -33,9 +33,14 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
+              <div className="flex-1 flex items-center justify-between sm:items-stretch sm:justify-between">
+                <div className="flex items-center">
+                  <div className="hidden sm:block">
+                    <p>Napat Jaiim</p>
+                  </div>
+                </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 items-center">
                     {navigation.map((item) => {
                       const isActive = router.asPath === item.href;
                       return (
@@ -44,8 +49,8 @@ export default function Navbar() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "text-black font-bold bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400"
-                              : "text-white hover:bg-gray-200 hover:text-gray-500 hover:underline hover:underline-offset-2",
+                              ? "font-bold bg-subColor border-y-2 transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                              : "font-light bg-subColor border-y-2 transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                         >
@@ -53,6 +58,9 @@ export default function Navbar() {
                         </a>
                       );
                     })}
+                    <button className="bg-gradient-to-r from-subColor to-mainColor rounded-md px-6 py-4 ">
+                      {`LET'S CONNECT`}
+                    </button>
                   </div>
                 </div>
               </div>
