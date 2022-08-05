@@ -11,6 +11,12 @@ module.exports = {
       subColor: "#864ba2",
       bgColor: "#0d324d",
       transparent: "transparent",
+      white: "#fff",
+    },
+    fontFamily: {
+      kLight: ["kanit-light", "sans-serif"],
+      kRegular: ["kanit-regular", "sans-serif"],
+      kBold: ["kanit-bold", "sans-serif"],
     },
   },
   plugins: [],

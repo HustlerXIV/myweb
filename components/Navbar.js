@@ -17,10 +17,13 @@ export default function Navbar() {
   ];
 
   return (
-    <Disclosure as="nav" className="bg-transparent">
+    <Disclosure
+      as="nav"
+      className="bg-transparent font-kRegular  sticky top-0 z-50"
+    >
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex items-center justify-between h-20">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -49,8 +52,8 @@ export default function Navbar() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "font-bold bg-subColor border-y-2 transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
-                              : "font-light bg-subColor border-y-2 transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300",
+                              ? "font-bold bg-subColor text-white transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+                              : "font-light bg-subColor text-white transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                         >
@@ -58,7 +61,7 @@ export default function Navbar() {
                         </a>
                       );
                     })}
-                    <button className="bg-gradient-to-r from-subColor to-mainColor rounded-md px-6 py-4 ">
+                    <button className="bg-gradient-to-r text-white from-subColor to-mainColor rounded-md px-6 py-4 ">
                       {`LET'S CONNECT`}
                     </button>
                   </div>
