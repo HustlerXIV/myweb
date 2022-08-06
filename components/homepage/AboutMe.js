@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Desc, DivCenter, SubTopic } from "./style";
+import { Desc, DivCenter, SubTopic } from "../style";
 
 function AboutMe() {
   return (
-    <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div className="container mx-auto mb-20 max-w-7xl px-2 sm:px-6 lg:px-8">
       <FrameCard>
         <Desc margin="0px" align="justify">
           I am a multi-tasker who is very interested in French and other
@@ -18,7 +18,6 @@ function AboutMe() {
           <SubTopic>MY EXPIRENCES</SubTopic>
         </DivCenter>
       </FrameCard>
-      <div style={{ height: "200px" }}></div>
     </div>
   );
 }

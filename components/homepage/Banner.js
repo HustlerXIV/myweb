@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Topic } from "./style";
+import { Topic } from "../style";
 function Banner() {
   return (
     <div style={{ position: "relative" }}>
