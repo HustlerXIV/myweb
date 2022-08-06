@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Desc, DivCenter, SubTopic } from "../../components/style";
+import TimeLine from "../../components/TimeLine";
 
 function AboutMeModule() {
   return (
@@ -17,6 +18,7 @@ function AboutMeModule() {
         <DivCenter>
           <SubTopic>MY EXPIRENCES</SubTopic>
         </DivCenter>
+        <TimeLine />
       </FrameCard>
     </div>
   );
@@ -26,7 +28,7 @@ const FrameCard = styled.div`
   width: 100%;
   height: 500px;
   max-width: 1000px;
-  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0px 80px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
   padding: 0px 40px 30px 40px;
