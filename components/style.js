@@ -21,3 +21,8 @@ export const Desc = styled.div`
 export const DivCenter = styled.div`
   margin: 0px auto 0px auto;
 `;
+
+export const FlexCols = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

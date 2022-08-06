@@ -1,14 +1,14 @@
 import React from "react";
-import AboutMe from "../../components/homepage/AboutMe";
 import Banner from "../../components/homepage/Banner";
-import MyProjects from "../../components/homepage/MyProjects";
+import AboutMeModule from "../AboutMe/AboutMeModule";
+import MyPortModule from "../MyPort/MyPortModule";
 
 export default function HomaPageModule() {
   return (
     <>
       <Banner />
-      <AboutMe />
-      <MyProjects />
+      <AboutMeModule />
+      <MyPortModule />
     </>
   );
 }
