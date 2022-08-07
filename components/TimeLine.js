@@ -29,8 +29,8 @@ function TimeLine() {
   return (
     <div className="flex gap-40 justify-center">
       {experiences.map((item, index) => (
-        <>
-          <div key={index} style={{ position: "relative" }}>
+        <div key={index}>
+          <div style={{ position: "relative" }}>
             {item.finisied && (
               <div className="progress">
                 <div className="color"></div>
@@ -62,7 +62,7 @@ function TimeLine() {
               <Year>{item.year}</Year>
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );
