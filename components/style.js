@@ -8,6 +8,9 @@ export const Topic = styled.div`
 export const SubTopic = styled.div`
   font-size: 20px;
   font-weight: bold;
+  width: ${(props) => props.width};
+  border-bottom: ${(props) => props.underline};
+  padding-bottom: ${(props) => props.pb};
 `;
 
 export const Desc = styled.div`
@@ -15,7 +18,7 @@ export const Desc = styled.div`
   font-weight: normal;
   margin: ${(props) => props.margin};
   text-align: ${(props) => props.align};
-  text-indent: 50px;
+  text-indent: ${(props) => props.indent};
 `;
 
 export const DivCenter = styled.div`
@@ -25,4 +28,10 @@ export const DivCenter = styled.div`
 export const FlexCols = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const DivWidth = styled.div`
+  width: 100%;
+  height: auto;
+  max-width: ${(props) => props.maxWidth};
 `;

@@ -15,7 +15,7 @@ function MyPortModule() {
 const SectionTitle = styled.div`
   width: 300px;
   padding: 10px 20px;
-  margin: 0px auto;
+  margin: 50px auto 0px auto;
   font-size: 30px;
   font-weight: bold;
   background-color: #fff;

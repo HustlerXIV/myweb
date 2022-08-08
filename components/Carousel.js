@@ -11,7 +11,7 @@ function Carousel() {
   return (
     <Swiper
       modules={[Navigation, Pagination, A11y]}
-      spaceBetween={60}
+      spaceBetween={70}
       slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
