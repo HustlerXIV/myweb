@@ -4,7 +4,7 @@ import { Topic } from "../style";
 function Banner() {
   return (
     <div style={{ position: "relative" }}>
-      <TopCardAboutMe>
+      <TopCardAboutMe id="about-me">
         <Topic>ABOUT ME</Topic>
       </TopCardAboutMe>
       <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

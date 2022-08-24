@@ -10,13 +10,16 @@ import {
 import TimeLine from "../../components/TimeLine";
 import { BiCake } from "react-icons/bi";
 import { MdMilitaryTech } from "react-icons/md";
-import Skills from "../../components/Skills";
-import SkillsModule from "./SkillsModule";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const MyInfoData = [
   {
     title: "10 April 1998 (24 years old)",
     icon: <BiCake />,
+  },
+  {
+    title: "Bangkok, Thailand",
+    icon: <HiOutlineLocationMarker />,
   },
   {
     title: "Exempted from military service",
@@ -62,15 +65,6 @@ function AboutMeModule() {
               the topic of "Creating a French language teaching website for
               beginners"`}
             </Desc>
-
-            <SubTopic
-              underline="3px solid #000"
-              width="120px"
-              style={{ margin: "20px 0px 10px 0px" }}
-            >
-              MY SKILLS
-            </SubTopic>
-            <SkillsModule />
           </DivWidth>
           <div>
             <SubTopic
@@ -86,7 +80,7 @@ function AboutMeModule() {
               Major FRENCH Minor International Relations
               <br />
               Faculty of Liberal Arts, Rangsit University, Pathumthani
-              (Thailand) | 2016 - 2020 (GPA - 3.37 Second class honors)
+              (Thailand) 2016 - 2020 (GPA - 3.37 Second class honors)
             </Desc>
 
             <SubTopic

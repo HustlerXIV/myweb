@@ -1,7 +1,28 @@
 import React from "react";
-import styled from "styled-components";
+import ShowSkills from "../../components/skills/ShowSkills";
 import { MdWeb } from "react-icons/md";
-import Skills from "../../components/Skills";
+import styled from "styled-components";
+export default function SkillsModule() {
+  return (
+    <div className="container  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <Container id="my-skills-projects">
+        <ShowSkills skillList={SkillsData} />
+        <ShowSkills skillList={SkillsData} />
+      </Container>
+    </div>
+  );
+}
+
+const Container = styled.div`
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 40px 0px;
+  max-height: 100%;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+`;
 
 const SkillsData = [
   {
@@ -89,34 +110,3 @@ const SkillsData = [
     ],
   },
 ];
-
-function SkillsModule() {
-  return (
-    <SectionContainer>
-      {SkillsData.map((item, index) => (
-        <div key={index}>
-          <ListTitleContainer>
-            <div style={{ marginRight: "10px" }}>{item.icon}</div>
-            {item.mainTitle}
-          </ListTitleContainer>
-          <Skills dataList={item.data} />
-        </div>
-      ))}
-    </SectionContainer>
-  );
-}
-
-const SectionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
-
-const ListTitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  margin-top: 5px;
-`;
-
-export default SkillsModule;

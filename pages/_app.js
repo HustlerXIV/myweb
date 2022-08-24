@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 import "../styles/style.css";
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
       <div className="font-kRegular">
         <Component {...pageProps} />
       </div>
+      <Footer />
     </>
   );
 }

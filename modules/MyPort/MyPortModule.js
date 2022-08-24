@@ -6,14 +6,15 @@ import { DivCenter, FlexCols, Topic } from "../../components/style";
 function MyPortModule() {
   return (
     <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <SectionTitle>MY PORTFOLIO</SectionTitle>
+      <SectionTitle>MY SKILLS & PROJECTS</SectionTitle>
       <Carousel />
     </div>
   );
 }
 
 const SectionTitle = styled.div`
-  width: 300px;
+  width: auto;
+  max-width: 500px;
   padding: 10px 20px;
   margin: 50px auto 0px auto;
   font-size: 30px;
