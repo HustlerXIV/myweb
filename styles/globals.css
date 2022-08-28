@@ -21,7 +21,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #f0f1f5;
+  background-image: linear-gradient(
+    to right top,
+    #001b48,
+    #012554,
+    #022f61,
+    #023a6d,
+    #02457a
+  );
+}
+
+.mt-10 {
+  margin-top: 10px;
 }
 
 a {

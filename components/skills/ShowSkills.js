@@ -10,7 +10,13 @@ export default function ShowSkills({
   const [open, setOpen] = useState(false);
 
   return (
-    <BannerCard open={open} sectionFlex={sectionFlex}>
+    <BannerCard
+      open={open}
+      sectionFlex={sectionFlex}
+      className="shadow-inner drop-shadow-lg
+
+"
+    >
       <DetailContainer>
         <Title>{headTitle}</Title>
         <ButtonContainer sectionFlex={sectionFlex}>
@@ -34,10 +40,16 @@ const BannerCard = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  min-height: 170px;
-
+  min-height: 175px;
+  background-image: linear-gradient(
+    to right,
+    #213d73,
+    #1c3f75,
+    #164177,
+    #0e4378,
+    #02457a
+  );
   transition: max-height 0.5s ease-in;
-  background: #e5feff;
   overflow: hidden;
 
   @media (max-width: 576px) {

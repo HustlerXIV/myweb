@@ -11,6 +11,7 @@ import TimeLine from "../../components/TimeLine";
 import { BiCake } from "react-icons/bi";
 import { MdMilitaryTech } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
+import DescWithIcon from "../../components/Form/DescWithIcon";
 
 const MyInfoData = [
   {
@@ -37,7 +38,8 @@ const MyEduData = [
 function AboutMeModule() {
   return (
     <div className="container mx-auto mb-20 max-w-7xl px-2 sm:px-6 lg:px-8">
-      <FrameCard>
+      <FrameCard className="bg-normalColor shadow-2xl">
+        <Topic style={{ margin: "0px auto" }}>ABOUT ME</Topic>
         <SectionContainer>
           <DivWidth maxWidth="430px">
             <SubTopic
@@ -48,10 +50,7 @@ function AboutMeModule() {
               MY INFORMATION
             </SubTopic>
             {MyInfoData.map((item, index) => (
-              <ListAboutMeContainer key={index}>
-                <div style={{ marginRight: "10px" }}>{item.icon}</div>
-                <ListAboutMe>{item.title}</ListAboutMe>
-              </ListAboutMeContainer>
+              <DescWithIcon key={index} title={item.title} icon={item.icon} />
             ))}
             <SubTopic
               underline="3px solid #000"
@@ -115,21 +114,11 @@ const FrameCard = styled.div`
   box-shadow: 0 0px 80px rgba(0, 0, 0, 0.12);
   display: flex;
   flex-direction: column;
-  padding: 0px 40px 40px 40px;
+  padding: 40px;
   gap: 30px;
   margin: 0px auto;
-  background-color: #fff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 `;
-
-const ListAboutMeContainer = styled.div`
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  margin-top: 5px;
-`;
-
-const ListAboutMe = styled.div``;
 
 export default AboutMeModule;

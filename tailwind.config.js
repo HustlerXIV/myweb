@@ -7,9 +7,13 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      mainColor: "#bf3a30",
-      subColor: "#864ba2",
-      bgColor: "#0d324d",
+      mainColor: "#02457A",
+      subColor: "#018ABE",
+      bgColor: "#97CAD8",
+      cleanColor: "#d6e8ee",
+      darkestColor: "#001b48",
+      normalColor: "#f9f9f9",
+      alertColor: "#F80000",
       transparent: "transparent",
       white: "#fff",
     },

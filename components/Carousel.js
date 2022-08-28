@@ -31,6 +31,7 @@ function Carousel() {
       style={{
         padding: isMobile ? "30px" : isTablet ? "30px" : "60px 60px 0px 60px",
         height: "500px",
+        "--swiper-pagination-bullet-inactive-color": "#fff",
       }}
       autoHeight={true}
       setWrapperSize={true}

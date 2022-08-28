@@ -6,17 +6,28 @@ import { DivCenter, FlexCols, Topic } from "../../components/style";
 function MyPortModule() {
   return (
     <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <SectionTitle>MY SKILLS & PROJECTS</SectionTitle>
+      <SectionTitle>MY PROJECTS</SectionTitle>
       <Carousel />
+      <ButtonContainer>
+        <button className="drop-shadow-lg rounded-md	 text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
+          SEE ALL PROJECTS
+        </button>
+      </ButtonContainer>
     </div>
   );
 }
 
+const ButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 const SectionTitle = styled.div`
   width: auto;
-  max-width: 500px;
+  max-width: 400px;
   padding: 10px 20px;
-  margin: 50px auto 0px auto;
+  margin: 0px auto 0px auto;
   font-size: 30px;
   font-weight: bold;
   background-color: #fff;

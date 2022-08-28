@@ -7,7 +7,7 @@ export default function SkillsModule() {
     <div className="container  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <Container id="my-skills-projects">
         <ShowSkills skillList={SkillsData} />
-        <ShowSkills skillList={SkillsData} />
+        <ShowSkills skillList={SkillsData} headTitle="SOFT SKILLS" />
       </Container>
     </div>
   );
@@ -17,7 +17,6 @@ const Container = styled.div`
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin: 40px 0px;
   max-height: 100%;
   @media (max-width: 576px) {
     flex-direction: column;

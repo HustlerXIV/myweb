@@ -33,12 +33,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-between sm:items-stretch sm:justify-between">
-                <div className="flex items-center">
-                  <div className="hidden sm:block">
-                    <p>Napat Jaiim</p>
-                  </div>
-                </div>
+              <div className="flex-1 flex items-center justify-end sm:items-stretch sm:justify-end">
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4 items-center">
                     {navigation.map((item) => {
@@ -49,8 +44,8 @@ export default function Navbar() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "font-bold bg-subColor text-white transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
-                              : "font-light bg-subColor text-white transition ease-in-out delay-150 bg-mainColor hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300",
+                              ? "font-bold text-darkestColor bg-cleanColor hover:shadow-2xl"
+                              : "font-light text-darkestColor bg-cleanColor hover:shadow-2xl",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                         >
@@ -58,7 +53,7 @@ export default function Navbar() {
                         </a>
                       );
                     })}
-                    <button className="bg-gradient-to-r text-white from-subColor to-mainColor rounded-md px-6 py-4 ">
+                    <button className="text-white rounded-md px-6 py-4 drop-shadow-lg px-6 py-2 bg-transparent border-dashed border-2 border-subColor transition ease-out hover:shadow-2xl">
                       {`LET'S CONNECT`}
                     </button>
                   </div>

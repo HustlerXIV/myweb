@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Topic = styled.div`
   font-size: 30px;
   font-weight: bold;
+  color: ${(props) => (props.color ? props.color : "black")};
 `;
 
 export const SubTopic = styled.div`
