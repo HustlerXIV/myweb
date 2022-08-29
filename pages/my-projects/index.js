@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import MyProjectsModule from "../../modules/MyProject";
+import MyProjectsModule from "../../modules/MyProject/MyProjectsModule";
 
 export default function MyProjectsPage() {
   return (

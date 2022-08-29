@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y } from "swiper";
 import { useMediaQuery } from "react-responsive";
@@ -11,6 +11,11 @@ import Card from "./Card";
 function Carousel() {
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   const isTablet = useMediaQuery({ query: `(max-width: 1050px)` });
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
 
   const changeSlidePerView = () => {
     let slide = 3;
@@ -22,33 +27,41 @@ function Carousel() {
     return slide;
   };
   return (
-    <Swiper
-      modules={[Navigation, Pagination, A11y]}
-      spaceBetween={70}
-      slidesPerView={changeSlidePerView()}
-      navigation={isMobile ? false : true}
-      pagination={{ clickable: true }}
-      style={{
-        padding: isMobile ? "30px" : isTablet ? "30px" : "60px 60px 0px 60px",
-        height: "500px",
-        "--swiper-pagination-bullet-inactive-color": "#fff",
-      }}
-      autoHeight={true}
-      setWrapperSize={true}
-    >
-      <SwiperSlide>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Card />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      {domLoaded && (
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={70}
+          slidesPerView={changeSlidePerView()}
+          navigation={isMobile ? false : true}
+          pagination={{ clickable: true }}
+          style={{
+            padding: isMobile
+              ? "30px"
+              : isTablet
+              ? "30px"
+              : "60px 60px 0px 60px",
+            height: "500px",
+            "--swiper-pagination-bullet-inactive-color": "#fff",
+          }}
+          autoHeight={true}
+          setWrapperSize={true}
+        >
+          <SwiperSlide>
+            <Card title="test" desc="test" type="test" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card title="test" desc="test" type="test" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card title="test" desc="test" type="test" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card title="test" desc="test" type="test" />
+          </SwiperSlide>
+        </Swiper>
+      )}
+    </>
   );
 }
 

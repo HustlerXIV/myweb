@@ -27,7 +27,10 @@ const MyInfoData = [
 
 export default function ContactFormModule() {
   return (
-    <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div
+      data-aos="fade-up"
+      className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+    >
       <Card>
         <Left>
           <Title className="text-white">CONTACT ME</Title>

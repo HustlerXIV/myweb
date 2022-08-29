@@ -4,7 +4,10 @@ import { MdWeb } from "react-icons/md";
 import styled from "styled-components";
 export default function SkillsModule() {
   return (
-    <div className="container  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div
+      data-aos="fade-up"
+      className="container  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+    >
       <Container id="my-skills-projects">
         <ShowSkills skillList={SkillsData} />
         <ShowSkills skillList={SkillsData} headTitle="SOFT SKILLS" />

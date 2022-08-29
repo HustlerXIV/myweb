@@ -3,6 +3,10 @@ import { Tabs, Tab, TabPanel } from "../../components/tabs/tabs";
 import styled from "styled-components";
 import Card from "../../components/Card";
 import MyPortBanner from "../../components/MyPort/MyPortBanner";
+import MyPortBanner2 from "../../components/MyPort/MyPortBanner2";
+
+import WebDevModule from "./WebDevModule";
+import Banner from "../../components/homepage/Banner";
 
 const TabsContainer = styled.div`
   display: flex;
@@ -18,8 +22,12 @@ export default function MyProjectsModule() {
     setActiveTab(value);
   };
   return (
-    <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <MyPortBanner />
+    <div
+      data-aos="fade-up"
+      className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+    >
+      {activeTab === 0 ? <MyPortBanner /> : <MyPortBanner2 />}
+
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
           <Tab label="Webs Development" value={0}></Tab>
@@ -28,14 +36,7 @@ export default function MyProjectsModule() {
       </TabsContainer>
       <TabPanelContainer>
         <TabPanel value={activeTab} selectedIndex={0}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <WebDevModule />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={1}>
           <h1>Tab 2</h1>

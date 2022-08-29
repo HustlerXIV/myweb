@@ -14,8 +14,9 @@ export const StylizedTab = styled.button`
   padding: 20px 0px;
   font-size: 1.25rem;
   background-color: transparent;
-  border: none;
   border-bottom-color: #0078ae;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   cursor: ${(p) => (p.disabled ? "default" : "pointer")};
   ${(p) =>
     p.active &&
@@ -35,8 +36,9 @@ export const StyledTabPanel = styled.div`
   height: auto;
   padding: 40px 65px;
   gap: 30px;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
   border: 3px solid #0078ae;
   border-top: none;
   box-shadow: inset 0 0 14px 0px #0078ae;
@@ -57,7 +59,7 @@ export const inactiveTab = {
 export const TabSlider = styled.div`
   width: ${(props) => `${props.width}px`};
   height: 4px;
-  background-color: #0078ae;
+  background-color: #fff;
   transition: 0.2s;
   transform: ${(props) => `translateX(${props.width * props.index}px)`};
 `;
@@ -68,7 +70,7 @@ const inset = keyframes`
             box-shadow: inset 0 0 0 0 rgba(238, 82, 83, 0);
   }
   100% {
-    -webkit-box-shadow: inset 0 0 14px 0px #0078ae;
-            box-shadow: inset 0 0 14px 0px #0078ae;
+    -webkit-box-shadow: inset 0 0 14px 0px #fff;
+            box-shadow: inset 0 0 14px 0px  #fff;
   }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ResponsiveImage, Topic } from "../style";
-function MyPortBanner() {
+function MyPortBanner2() {
   return (
     <div style={{ position: "relative" }}>
       <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -9,12 +9,7 @@ function MyPortBanner() {
           className="flex justify-between items-center"
           style={{ height: "600px" }}
         >
-          <ResponsiveImage
-            data-aos="fade-right"
-            src="/me-right.png"
-            maxWidth="400px"
-          />
-          <div data-aos="fade-right">
+          <div data-aos="fade-left">
             <div className="text-2xl mb-3 text-white drop-shadow-lg">
               OPEN TO WORK
             </div>
@@ -25,10 +20,15 @@ function MyPortBanner() {
               SOFTWARE DEVELOPER
             </div>
           </div>
+          <ResponsiveImage
+            data-aos="fade-left"
+            src="/me-right.png"
+            maxWidth="400px"
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export default MyPortBanner;
+export default MyPortBanner2;

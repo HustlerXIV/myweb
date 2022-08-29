@@ -37,7 +37,10 @@ const MyEduData = [
 
 function AboutMeModule() {
   return (
-    <div className="container mx-auto mb-20 max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div
+      data-aos="fade-up"
+      className="container mx-auto mb-20 max-w-7xl px-2 sm:px-6 lg:px-8"
+    >
       <FrameCard id="about-me" className="bg-normalColor shadow-2xl">
         <Topic style={{ margin: "0px auto" }}>ABOUT ME</Topic>
         <SectionContainer>

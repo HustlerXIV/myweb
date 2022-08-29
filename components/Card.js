@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-function Card() {
+function Card({ title, type, desc }) {
   return (
     <>
       <div className="cards">
@@ -19,14 +19,11 @@ function Card() {
               </svg>
 
               <div className="card-header-text">
-                <h3 className="card-title">Test</h3>
-                <span className="card-status">test</span>
+                <h3 className="card-title">{title}</h3>
+                <span className="card-status">{type}</span>
               </div>
             </div>
-            <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
+            <p className="card-description">{desc}</p>
           </div>
         </a>
       </div>

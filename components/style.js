@@ -36,3 +36,9 @@ export const DivWidth = styled.div`
   height: auto;
   max-width: ${(props) => props.maxWidth};
 `;
+
+export const ResponsiveImage = styled.img`
+  width: 100%;
+  height: auto;
+  max-width: ${(props) => props.maxWidth};
+`;

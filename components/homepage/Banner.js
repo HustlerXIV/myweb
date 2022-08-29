@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Topic } from "../style";
+import { ResponsiveImage, Topic } from "../style";
 function Banner() {
   return (
     <div style={{ position: "relative" }}>
-      <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div
+        data-aos="fade-up"
+        className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+      >
         <div
           className="flex justify-between items-center"
           style={{ height: "600px" }}
@@ -28,7 +31,7 @@ function Banner() {
               </button>
             </div>
           </div>
-          {/* <BannerImage src="/me-right.png" /> */}
+          <ResponsiveImage src="/me-right.png" maxWidth="400px" />
         </div>
       </div>
     </div>
