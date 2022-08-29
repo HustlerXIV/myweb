@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import Carousel from "../../components/Carousel";
@@ -9,9 +10,11 @@ function MyPortModule() {
       <SectionTitle>MY PROJECTS</SectionTitle>
       <Carousel />
       <ButtonContainer>
-        <button className="drop-shadow-lg rounded-md	 text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
-          SEE ALL PROJECTS
-        </button>
+        <Link href="/my-projects">
+          <button className="drop-shadow-lg rounded-md text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
+            SEE ALL PROJECTS
+          </button>
+        </Link>
       </ButtonContainer>
     </div>
   );

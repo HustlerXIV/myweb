@@ -12,8 +12,8 @@ export default function Navbar() {
 
   const navigation = [
     { name: "HOMEPAGE", href: "/" },
-    { name: "ABOUT ME", href: "#about-me" },
-    { name: "MY SKILLS & PROJECTS", href: "#my-skills-projects" },
+    { name: "ABOUT ME", href: "/#about-me" },
+    { name: "MY SKILLS & PROJECTS", href: "/#my-skills-projects" },
   ];
 
   return (
