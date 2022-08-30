@@ -5,7 +5,7 @@ import Card from "../../components/Card";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
 export default function CertModule({ certData }) {
-  const items = certData;
+  const items = certData.filter((i) => i.isPort === false);
   function Items({ currentItems }) {
     return (
       <>

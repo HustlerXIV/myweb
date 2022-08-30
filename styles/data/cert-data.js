@@ -1,0 +1,40 @@
+import { MdWeb } from "react-icons/md";
+
+export const certData = [
+  {
+    id: 1,
+    title: "Mastering Web Development with React",
+    type: "Certificate",
+    desc: "ddddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "mastering-react",
+    link: "/my-projects/mastering-react",
+    principal: true,
+    demo: "https://cloud.trueidc.com/",
+    isPort: false,
+  },
+  {
+    id: 2,
+    title: "Ionic React Fundamentals",
+    type: "Certificate",
+    desc: "ddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "ionic-react-fundamentals",
+    link: "/my-projects/ionic-react-fundamentals",
+    principal: true,
+    demo: "https://pasona.co.th/",
+    isPort: false,
+  },
+  {
+    id: 3,
+    title: "Introduction to Computer Science",
+    type: "Certificate",
+    desc: "ddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "intro-com-sci",
+    link: "/my-projects/intro-com-sci",
+    principal: true,
+    demo: "",
+    isPort: false,
+  },
+];

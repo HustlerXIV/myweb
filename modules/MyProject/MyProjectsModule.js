@@ -16,7 +16,7 @@ const TabsContainer = styled.div`
 
 const TabPanelContainer = styled.div``;
 
-export default function MyProjectsModule({ webData }) {
+export default function MyProjectsModule({ data }) {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleChange = (e, value) => {
@@ -37,10 +37,10 @@ export default function MyProjectsModule({ webData }) {
       </TabsContainer>
       <TabPanelContainer>
         <TabPanel value={activeTab} selectedIndex={0}>
-          <WebDevModule webData={webData} />
+          <WebDevModule webData={data} />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={1}>
-          <CertModule certData={webData} />
+          <CertModule certData={data} />
         </TabPanel>
       </TabPanelContainer>
     </div>

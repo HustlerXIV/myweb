@@ -6,7 +6,7 @@ import Card from "../../components/Card";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
 export default function WebDevModule({ webData }) {
-  const items = webData;
+  const items = webData.filter((i) => i.isPort === true);
   function Items({ currentItems }) {
     return (
       <>

@@ -19,6 +19,7 @@ export default function ProjectModule({ data }) {
   const desc = _.get(data, "desc", "");
   const utilities = _.get(data, "utilities", []);
   const demo = _.get(data, "demo", "");
+  const isPort = _.get(data, "isPort", false);
 
   return (
     <Container>
@@ -34,20 +35,25 @@ export default function ProjectModule({ data }) {
               </SubTopic>
               <Topic fs="40px">{title}</Topic>
             </div>
-            <a href={demo} target="_blank" rel="noreferrer">
-              <NormalButton disabled={demo === "" ? true : false}>
-                VIEW WEB
-              </NormalButton>
-            </a>
+            {isPort && (
+              <a href={demo} target="_blank" rel="noreferrer">
+                <NormalButton disabled={demo === "" ? true : false}>
+                  VIEW WEB
+                </NormalButton>
+              </a>
+            )}
           </HeadContainer>
 
           <Desc style={{ marginTop: "20px" }} fs="20px">
             {desc}
           </Desc>
         </Card>
-        <SkillCard>
-          <Skills maxWidth="auto" dataList={utilities} />
-        </SkillCard>
+        {isPort && (
+          <SkillCard>
+            <Skills maxWidth="auto" dataList={utilities} />
+          </SkillCard>
+        )}
+
         <ButtonContainer>
           <Link href="/my-projects">
             <RedButton>BACK TO ALL PROJECTS</RedButton>

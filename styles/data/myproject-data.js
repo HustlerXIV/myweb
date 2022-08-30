@@ -11,6 +11,7 @@ export const myProjectData = [
     link: "/my-projects/true-idc-cloud",
     principal: true,
     demo: "https://cloud.trueidc.com/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -66,6 +67,7 @@ export const myProjectData = [
     link: "/my-projects/pasona-th",
     principal: true,
     demo: "https://pasona.co.th/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -121,6 +123,7 @@ export const myProjectData = [
     link: "/my-projects/deepscope",
     principal: true,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -144,6 +147,7 @@ export const myProjectData = [
     link: "/my-projects/su-thailand",
     principal: true,
     demo: "https://su-thailand.org/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -167,6 +171,7 @@ export const myProjectData = [
     link: "/my-projects/true-idc-cloud-cms",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -190,6 +195,7 @@ export const myProjectData = [
     link: "/my-projects/my-welath",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -213,6 +219,7 @@ export const myProjectData = [
     link: "/my-projects/ams-cms",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -236,6 +243,7 @@ export const myProjectData = [
     link: "/my-projects/le-francais-pour-lavenir",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -259,6 +267,7 @@ export const myProjectData = [
     link: "/my-projects/cnfp-auf",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -282,6 +291,7 @@ export const myProjectData = [
     link: "/my-projects/zapper",
     principal: false,
     demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -305,29 +315,7 @@ export const myProjectData = [
     link: "/my-projects/my-port-v1",
     principal: false,
     demo: "",
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "HTML",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 11,
-    title: "E-COMMERCE",
-    type: "Learning Project",
-    desc: "ddddd",
-    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
-    slug: "e-commerce",
-    link: "/my-projects/e-commerce",
-    principal: false,
-    demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -343,14 +331,15 @@ export const myProjectData = [
   },
   {
     id: 12,
-    title: "To do list",
+    title: "E-COMMERCE",
     type: "Learning Project",
     desc: "ddddd",
     img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
-    slug: "to-do-list",
-    link: "/my-projects/to-do-list",
+    slug: "e-commerce",
+    link: "/my-projects/e-commerce",
     principal: false,
-    demo: "https://hustlerxiv.github.io/todo-list/",
+    demo: "",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -366,14 +355,15 @@ export const myProjectData = [
   },
   {
     id: 13,
-    title: "TIC-TAC-TOE",
+    title: "To do list",
     type: "Learning Project",
     desc: "ddddd",
     img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
-    slug: "tic-tac-toe",
-    link: "/my-projects/tic-tac-toe",
+    slug: "to-do-list",
+    link: "/my-projects/to-do-list",
     principal: false,
-    demo: "https://hustlerxiv.github.io/tic-tac-toe/",
+    demo: "https://hustlerxiv.github.io/todo-list/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -389,14 +379,15 @@ export const myProjectData = [
   },
   {
     id: 14,
-    title: "Countdown Timer",
+    title: "TIC-TAC-TOE",
     type: "Learning Project",
     desc: "ddddd",
     img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
-    slug: "countdown-timer",
-    link: "/my-projects/countdown-timer",
+    slug: "tic-tac-toe",
+    link: "/my-projects/tic-tac-toe",
     principal: false,
-    demo: "https://hustlerxiv.github.io/countdown-timer/",
+    demo: "https://hustlerxiv.github.io/tic-tac-toe/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -412,14 +403,15 @@ export const myProjectData = [
   },
   {
     id: 15,
-    title: "Quiz App",
+    title: "Countdown Timer",
     type: "Learning Project",
     desc: "ddddd",
     img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
-    slug: "quiz-app",
-    link: "/my-projects/quiz-app",
+    slug: "countdown-timer",
+    link: "/my-projects/countdown-timer",
     principal: false,
-    demo: "https://hustlerxiv.github.io/quiz-app/",
+    demo: "https://hustlerxiv.github.io/countdown-timer/",
+    isPort: true,
     utilities: [
       {
         mainTitle: "Web Development",
@@ -432,5 +424,65 @@ export const myProjectData = [
         ],
       },
     ],
+  },
+  {
+    id: 16,
+    title: "Quiz App",
+    type: "Learning Project",
+    desc: "ddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "quiz-app",
+    link: "/my-projects/quiz-app",
+    principal: false,
+    demo: "https://hustlerxiv.github.io/quiz-app/",
+    isPort: true,
+    utilities: [
+      {
+        mainTitle: "Web Development",
+        icon: <MdWeb />,
+        data: [
+          {
+            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            title: "HTML",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 101,
+    title: "Mastering Web Development with React",
+    type: "Certificate",
+    desc: "ddddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "mastering-react",
+    link: "/my-projects/mastering-react",
+    principal: false,
+    demo: "https://cloud.trueidc.com/",
+    isPort: false,
+  },
+  {
+    id: 102,
+    title: "Ionic React Fundamentals",
+    type: "Certificate",
+    desc: "ddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "ionic-react-fundamentals",
+    link: "/my-projects/ionic-react-fundamentals",
+    principal: false,
+    demo: "https://pasona.co.th/",
+    isPort: false,
+  },
+  {
+    id: 103,
+    title: "Introduction to Computer Science",
+    type: "Certificate",
+    desc: "ddddd",
+    img: "https://img.freepik.com/free-vector/cute-astronaut-dance-cartoon-vector-icon-illustration-technology-science-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3851.jpg?w=2000",
+    slug: "intro-com-sci",
+    link: "/my-projects/intro-com-sci",
+    principal: false,
+    demo: "",
+    isPort: false,
   },
 ];
