@@ -8,7 +8,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Card from "./Card";
-function Carousel() {
+import _ from "lodash";
+import Link from "next/link";
+function Carousel({ data }) {
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
   const isTablet = useMediaQuery({ query: `(max-width: 1050px)` });
   const [domLoaded, setDomLoaded] = useState(false);
@@ -47,18 +49,17 @@ function Carousel() {
           autoHeight={true}
           setWrapperSize={true}
         >
-          <SwiperSlide>
-            <Card title="test" desc="test" type="test" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card title="test" desc="test" type="test" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card title="test" desc="test" type="test" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card title="test" desc="test" type="test" />
-          </SwiperSlide>
+          {_.defaultTo(data, []).map((item, index) => (
+            <SwiperSlide key={index}>
+              <Card
+                title={item.title}
+                desc={item.desc}
+                link={item.link}
+                type={item.type}
+                img={item.img}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       )}
     </>

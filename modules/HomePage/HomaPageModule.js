@@ -5,14 +5,14 @@ import ContactFormModule from "../ContactForm/ContactFormModule";
 import MyPortModule from "../MyPort/MyPortModule";
 import SkillsModule from "./SkillsModule";
 
-export default function HomaPageModule() {
+export default function HomaPageModule({ projectData }) {
   return (
     <>
       <Banner />
       <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
         <AboutMeModule />
         <SkillsModule />
-        <MyPortModule />
+        <MyPortModule projectData={projectData} />
         <ContactFormModule />
       </div>
     </>

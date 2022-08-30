@@ -7,6 +7,7 @@ import MyPortBanner2 from "../../components/MyPort/MyPortBanner2";
 
 import WebDevModule from "./WebDevModule";
 import Banner from "../../components/homepage/Banner";
+import CertModule from "./CertModule";
 
 const TabsContainer = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const TabsContainer = styled.div`
 
 const TabPanelContainer = styled.div``;
 
-export default function MyProjectsModule() {
+export default function MyProjectsModule({ webData }) {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleChange = (e, value) => {
@@ -36,10 +37,10 @@ export default function MyProjectsModule() {
       </TabsContainer>
       <TabPanelContainer>
         <TabPanel value={activeTab} selectedIndex={0}>
-          <WebDevModule />
+          <WebDevModule webData={webData} />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={1}>
-          <h1>Tab 2</h1>
+          <CertModule certData={webData} />
         </TabPanel>
       </TabPanelContainer>
     </div>

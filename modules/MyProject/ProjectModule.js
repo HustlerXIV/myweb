@@ -2,61 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import {
   Desc,
+  NormalButton,
   RedButton,
   ResponsiveImage,
   SubTopic,
   Topic,
 } from "../../components/style";
 import Skills from "../../components/skills/Skills";
-import { MdWeb } from "react-icons/md";
+
 import Link from "next/link";
+import _ from "lodash";
 
-const SkillsData = [
-  {
-    mainTitle: "Web Development",
-    icon: <MdWeb />,
-    data: [
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "HTML",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "CSS",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "JavaScript",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "PHP",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "MySQL",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "ReactJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "NextJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "NestJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "Kotlin",
-      },
-    ],
-  },
-];
+export default function ProjectModule({ data }) {
+  const title = _.get(data, "title", "");
+  const type = _.get(data, "type", "");
+  const desc = _.get(data, "desc", "");
+  const utilities = _.get(data, "utilities", []);
+  const demo = _.get(data, "demo", "");
 
-export default function ProjectModule() {
   return (
     <Container>
       <Left data-aos="fade-right">
@@ -64,27 +27,53 @@ export default function ProjectModule() {
       </Left>
       <Right data-aos="fade-left">
         <Card>
-          <SubTopic fs="25px">Test</SubTopic>
-          <Topic fs="40px">Test</Topic>
-          <Desc fs="20px">test</Desc>
+          <HeadContainer>
+            <div>
+              <SubTopic weight="normal" fs="25px">
+                {type}
+              </SubTopic>
+              <Topic fs="40px">{title}</Topic>
+            </div>
+            <a href={demo} target="_blank" rel="noreferrer">
+              <NormalButton disabled={demo === "" ? true : false}>
+                VIEW WEB
+              </NormalButton>
+            </a>
+          </HeadContainer>
+
+          <Desc style={{ marginTop: "20px" }} fs="20px">
+            {desc}
+          </Desc>
         </Card>
         <SkillCard>
-          <Skills maxWidth="auto" dataList={SkillsData} />
+          <Skills maxWidth="auto" dataList={utilities} />
         </SkillCard>
-        <Link href="/my-projects">
-          <RedButton>Back to see all projects</RedButton>
-        </Link>
+        <ButtonContainer>
+          <Link href="/my-projects">
+            <RedButton>BACK TO ALL PROJECTS</RedButton>
+          </Link>
+        </ButtonContainer>
       </Right>
     </Container>
   );
 }
 
+const HeadContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   gap: 40px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
@@ -109,9 +98,6 @@ const Card = styled.div`
   width: 100%;
   height: auto;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 `;
 
 const SkillCard = styled.div`
@@ -121,4 +107,9 @@ const SkillCard = styled.div`
   width: 100%;
   height: auto;
   padding: 40px;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 20px;
 `;

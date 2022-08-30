@@ -10,7 +10,7 @@ export const Topic = styled.div`
 
 export const SubTopic = styled.div`
   font-size: ${(props) => (props.fs ? props.fs : "20px")};
-  font-weight: bold;
+  font-weight: normal;
   width: ${(props) => props.width};
   border-bottom: ${(props) => props.underline};
   padding-bottom: ${(props) => props.pb};
@@ -51,6 +51,21 @@ export const RedButton = styled.button`
   padding: 12px;
   border: none;
   border-radius: 10px;
-  background-color: red;
+  background-color: #f44336;
   color: #fff;
+`;
+
+export const NormalButton = styled.button`
+  width: auto;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #008cba;
+  color: #fff;
+
+  &:disabled {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: not-allowed;
+  }
 `;

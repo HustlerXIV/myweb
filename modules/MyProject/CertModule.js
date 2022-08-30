@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
 import ReactPaginate from "react-paginate";
 import styled from "styled-components";
 import Card from "../../components/Card";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
-export default function WebDevModule({ webData }) {
-  const items = webData;
+export default function CertModule({ certData }) {
+  const items = certData;
   function Items({ currentItems }) {
     return (
       <>
