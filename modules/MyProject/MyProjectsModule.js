@@ -30,8 +30,8 @@ export default function MyProjectsModule() {
 
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tab label="Webs Development" value={0}></Tab>
-          <Tab label="Graphic Designs" value={1}></Tab>
+          <Tab label="Web Development" value={0}></Tab>
+          <Tab label="Certificates" value={1}></Tab>
         </Tabs>
       </TabsContainer>
       <TabPanelContainer>

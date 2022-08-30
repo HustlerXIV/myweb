@@ -2,9 +2,9 @@ import _ from "lodash";
 import React from "react";
 import styled from "styled-components";
 
-export default function Skills({ dataList }) {
+export default function Skills({ dataList, maxWidth }) {
   return (
-    <SectionContainer>
+    <SectionContainer maxWidth={maxWidth}>
       {_.defaultTo(dataList, []).map((item, index) => (
         <div key={index}>
           <ListTitleContainer>
@@ -29,7 +29,7 @@ const SectionContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   width: auto;
-  max-width: 480px;
+  max-width: ${(props) => (props.maxWidth ? props.maxWidth : "480px")};
   margin: 0px auto;
   padding: 20px;
 `;

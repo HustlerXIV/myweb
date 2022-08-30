@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <div className="font-kRegular">
+      <div className="font-kRegular" style={{ marginBottom: "40px" }}>
         <Component {...pageProps} />
       </div>
       <Footer />
