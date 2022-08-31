@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { BlueButton } from "../style";
 import Skills from "./Skills";
 
 export default function ShowSkills({
@@ -20,9 +21,9 @@ export default function ShowSkills({
       <DetailContainer>
         <Title>{headTitle}</Title>
         <ButtonContainer sectionFlex={sectionFlex}>
-          <Button onClick={() => setOpen(!open)}>
+          <BlueButton onClick={() => setOpen(!open)}>
             {open ? "HIDE" : "SHOW"}
-          </Button>
+          </BlueButton>
         </ButtonContainer>
       </DetailContainer>
       {open && <Skills dataList={skillList} />}
@@ -79,12 +80,4 @@ const Title = styled.div`
   @media (max-width: 1024px) {
     font-size: 40px;
   }
-`;
-
-const Button = styled.button`
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #fff;
-  width: 100px;
 `;

@@ -4,24 +4,21 @@ import { ResponsiveImage, Topic } from "../style";
 function MyPortBanner2() {
   return (
     <div style={{ position: "relative" }}>
-      <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
         <div
-          className="flex justify-between items-center"
-          style={{ height: "600px" }}
+          data-aos="fade-right"
+          className="flex flex-col gap-1 banner-height justify-between items-center sm:flex-row sm:gap-5"
         >
-          <div data-aos="fade-left">
-            <div className="text-2xl mb-3 text-white drop-shadow-lg">
-              OPEN TO WORK
+          <div>
+            <div className="text-4xl  my-5 text-white drop-shadow-lg sm:text-6xl">
+              CERTIFICATES
             </div>
-            <div className="text-6xl my-5 text-white drop-shadow-lg">
-              Hello, I am Napat Jaiyim
-            </div>
-            <div className="text-2xl my-4 text-white drop-shadow-lg">
-              SOFTWARE DEVELOPER
+            <div className="text-xl my-4 text-white drop-shadow-lg sm:text-2xl">
+              My Certificates and Awards
             </div>
           </div>
           <ResponsiveImage
-            data-aos="fade-left"
+            data-aos="fade-right"
             src="/me-right.png"
             maxWidth="400px"
           />

@@ -1,28 +1,27 @@
 import React from "react";
-import styled from "styled-components";
-import { ResponsiveImage, Topic } from "../style";
+
+import {
+  BannerTitle,
+  ResponsiveImage,
+  BannerDesc,
+  BannerSubTitle,
+  WidthFlex,
+} from "../style";
 function MyPortBanner() {
   return (
     <div style={{ position: "relative" }}>
-      <div className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div
-          className="flex justify-between items-center"
-          style={{ height: "600px" }}
-        >
-          <ResponsiveImage
-            data-aos="fade-right"
-            src="/me-right.png"
-            maxWidth="400px"
-          />
-          <div data-aos="fade-right">
-            <div className="text-2xl mb-3 text-white drop-shadow-lg">
-              OPEN TO WORK
+      <div
+        data-aos="fade-right"
+        className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
+      >
+        <div className="flex flex-col gap-10 banner-height justify-between items-center sm:flex-row sm:gap-5 lg:gap-5">
+          <ResponsiveImage src="/me-right.png" maxWidth="400px" />
+          <div>
+            <div className="text-4xl  my-5 text-white drop-shadow-lg sm:text-4xl lg:text-6xl">
+              WEB DEVELOPMENT
             </div>
-            <div className="text-6xl my-5 text-white drop-shadow-lg">
-              Hello, I am Napat Jaiyim
-            </div>
-            <div className="text-2xl my-4 text-white drop-shadow-lg">
-              SOFTWARE DEVELOPER
+            <div className="text-xl my-4 text-white drop-shadow-lg sm:text-lg lg:text-2xl">
+              Professional Works & Learning Projects
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
+import styled from "styled-components";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -13,16 +14,20 @@ export default function Navbar() {
   const navigation = [
     { name: "HOMEPAGE", href: "/" },
     { name: "ABOUT ME", href: "/#about-me" },
-    { name: "MY SKILLS & PROJECTS", href: "/#my-skills-projects" },
+    { name: "MY PROJECTS", href: "/#my-projects" },
   ];
 
   return (
-    <Disclosure as="nav" className="bg-transparent font-kRegular top-0 z-50">
+    <Disclosure
+      style={{ marginBottom: "30px" }}
+      as="nav"
+      className="bg-mainColor font-kRegular top-0 z-50"
+    >
       {({ open }) => (
         <>
           <div
             data-aos="fade-down"
-            className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 "
+            className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 "
           >
             <div className="relative flex items-center justify-between h-20">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,8 +52,8 @@ export default function Navbar() {
                           href={item.href}
                           className={classNames(
                             isActive
-                              ? "font-bold text-darkestColor bg-cleanColor hover:shadow-2xl"
-                              : "font-light text-darkestColor bg-cleanColor hover:shadow-2xl",
+                              ? "font-bold text-white bg-subColor hover:shadow-2xl"
+                              : "font-bold text-white bg-subColor hover:shadow-2xl",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                         >
@@ -68,11 +73,12 @@ export default function Navbar() {
 
           <Disclosure.Panel
             className="sm:hidden"
-            style={{ position: "absolute", width: "100%", zIndex: "100" }}
+            style={{ position: "absolute", width: "100%", zIndex: 100 }}
           >
             <div
               data-aos="fade-down"
-              className="px-2 pt-2 pb-3 space-y-1 bg-mainColor text-white"
+              className="px-2 pt-2 pb-3 space-y-1 text-white"
+              style={{ position: "absolute", width: "100%", zIndex: 100 }}
             >
               {navigation.map((item) => {
                 const isActive = router.asPath === item.href;
@@ -94,9 +100,20 @@ export default function Navbar() {
                 );
               })}
             </div>
+            <CoverBg />
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
   );
 }
+
+const CoverBg = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-color: #02457a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+`;

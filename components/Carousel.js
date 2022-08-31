@@ -35,7 +35,7 @@ function Carousel({ data }) {
           modules={[Navigation, Pagination, A11y]}
           spaceBetween={70}
           slidesPerView={changeSlidePerView()}
-          navigation={isMobile ? false : true}
+          navigation={isTablet ? false : true}
           pagination={{ clickable: true }}
           style={{
             padding: isMobile

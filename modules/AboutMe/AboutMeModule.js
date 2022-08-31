@@ -39,9 +39,10 @@ function AboutMeModule() {
   return (
     <div
       data-aos="fade-up"
-      className="container mx-auto mb-20 max-w-7xl px-2 sm:px-6 lg:px-8"
+      className="container mx-auto mb-20 max-w-7xl px-6 sm:px-6 lg:px-8"
+      id="about-me"
     >
-      <FrameCard id="about-me" className="bg-normalColor shadow-2xl">
+      <FrameCard className="bg-normalColor shadow-2xl">
         <Topic style={{ margin: "0px auto" }}>ABOUT ME</Topic>
         <SectionContainer>
           <DivWidth maxWidth="430px">
@@ -107,6 +108,7 @@ const SectionContainer = styled.div`
 
   @media (max-width: 576px) {
     flex-direction: column;
+    gap: 20px;
   }
 `;
 

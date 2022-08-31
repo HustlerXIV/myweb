@@ -26,7 +26,7 @@ export default function ProjectModule({ data }) {
       <Left data-aos="fade-right">
         <ResponsiveImage src="/me-right.png" />
       </Left>
-      <Right data-aos="fade-left">
+      <Right data-aos="fade-right">
         <Card>
           <HeadContainer>
             <div>
@@ -68,6 +68,12 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 `;
 
 const Container = styled.div`

@@ -6,6 +6,7 @@ import InputTextArea from "../../components/Form/InputTextArea";
 import { BsTelephoneForward } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineLinkedin } from "react-icons/ai";
+import { BlueButton, TransButton } from "../../components/style";
 
 const MyInfoData = [
   {
@@ -29,7 +30,7 @@ export default function ContactFormModule() {
   return (
     <div
       data-aos="fade-up"
-      className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+      className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
     >
       <Card>
         <Left>
@@ -47,19 +48,16 @@ export default function ContactFormModule() {
           </CardInfo>
         </Left>
         <Right>
-          <HalfContainer>
+          <HalfContainer column="column">
             <InputForm id="firstname" name="firstname" label="First name" />
             <InputForm id="lastname" name="lastname" label="Last name" />
           </HalfContainer>
+          <InputForm id="email" name="email" label="Email" />
           <InputForm id="subject" name="subject" label="Subject" />
           <InputTextArea id="msg" name="msg" label="Message" />
-          <HalfContainer>
-            <button className="drop-shadow-lg mt-10 text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
-              SEND
-            </button>
-            <button className="drop-shadow-lg mt-10 text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
-              CLEAR
-            </button>
+          <HalfContainer style={{ marginTop: "10px" }}>
+            <BlueButton>SEND</BlueButton>
+            <TransButton>CLEAR</TransButton>
           </HalfContainer>
         </Right>
       </Card>
@@ -77,6 +75,7 @@ const Card = styled.div`
   border-radius: 10px;
   display: flex;
   box-shadow: inset 0 0 20px #0078ae;
+  gap: 10px;
 
   @media (max-width: 1024px) {
     padding: 30px;
@@ -112,7 +111,11 @@ const Right = styled.div`
 
 const HalfContainer = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 15px;
+
+  @media (max-width: 900px) {
+    flex-direction: ${(p) => p.column};
+  }
   @media (max-width: 576px) {
     flex-direction: column;
   }

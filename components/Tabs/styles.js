@@ -17,6 +17,8 @@ export const StylizedTab = styled.button`
   border-bottom-color: #0078ae;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
   cursor: ${(p) => (p.disabled ? "default" : "pointer")};
   ${(p) =>
     p.active &&
@@ -26,6 +28,10 @@ export const StylizedTab = styled.button`
       animation: ${inset} 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     `}
   ${(p) => !p.active && p.inactiveStyle}
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 export const StyledTabPanel = styled.div`
@@ -42,7 +48,7 @@ export const StyledTabPanel = styled.div`
   border: 3px solid #0078ae;
   border-top: none;
   box-shadow: inset 0 0 14px 0px #0078ae;
-  @media (max-width: 576px) {
+  @media (max-width: 1024px) {
     padding: 20px;
   }
 `;

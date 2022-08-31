@@ -2,21 +2,20 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import Carousel from "../../components/Carousel";
-import { DivCenter, FlexCols, Topic } from "../../components/style";
+import { BlueButton, DivCenter, FlexCols, Topic } from "../../components/style";
 
 function MyPortModule({ projectData }) {
   return (
     <div
+      id="my-projects"
       data-aos="fade-up"
-      className="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+      className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
     >
       <SectionTitle>MY PROJECTS</SectionTitle>
       <Carousel data={projectData} />
       <ButtonContainer>
         <Link href="/my-projects">
-          <button className="drop-shadow-lg rounded-md text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
-            SEE ALL PROJECTS
-          </button>
+          <BlueButton>SEE ALL PROJECTS</BlueButton>
         </Link>
       </ButtonContainer>
     </div>

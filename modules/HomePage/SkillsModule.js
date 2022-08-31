@@ -6,9 +6,9 @@ export default function SkillsModule() {
   return (
     <div
       data-aos="fade-up"
-      className="container  mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+      className="container  mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
     >
-      <Container id="my-skills-projects">
+      <Container>
         <ShowSkills skillList={SkillsData} />
         <ShowSkills skillList={SkillsData} headTitle="SOFT SKILLS" />
       </Container>

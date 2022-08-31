@@ -13,12 +13,14 @@ export default function WebDevModule({ webData }) {
         {currentItems &&
           currentItems.map((item, index) => (
             <a href={item.link} key={index}>
-              <Card
-                title={item.title}
-                type={item.type}
-                desc={item.desc}
-                img={item.img}
-              />
+              <eachCard>
+                <Card
+                  title={item.title}
+                  type={item.type}
+                  desc={item.desc}
+                  img={item.img}
+                />
+              </eachCard>
             </a>
           ))}
       </>
@@ -86,4 +88,8 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+`;
+
+const eachCard = styled.div`
+  width: 320px;
 `;
