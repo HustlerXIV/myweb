@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { Tabs, Tab, TabPanel } from "@components/tabs/tabs";
+import { Tabs, Tab, TabPanel } from "@components/tabs/Tabs";
 import styled from "styled-components";
-import Card from "@components/Card";
 import MyPortBanner from "@components/MyPort/MyPortBanner";
 import MyPortBanner2 from "@components/MyPort/MyPortBanner2";
 
 import WebDevModule from "./WebDevModule";
-import Banner from "@components/homepage/Banner";
 import CertModule from "./CertModule";
 import { FcNext, FcPrevious } from "react-icons/fc";
 const TabsContainer = styled.div`
