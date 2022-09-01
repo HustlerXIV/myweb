@@ -44,6 +44,7 @@ export const ResponsiveImage = styled.img`
   width: 100%;
   height: auto;
   max-width: ${(props) => props.maxWidth};
+  transform: ${(props) => props.transform};
 
   @media (max-width: 1024px) {
     max-width: ${(props) => props.TBmaxWidth};
@@ -65,7 +66,13 @@ export const RedButton = styled.button`
   border-radius: 10px;
   background-color: #f44336;
   color: #fff;
-  filter: drop-shadow(2px 2px 2px #f44336);
+  filter: drop-shadow(3px 3px 0px #ff6d63);
+
+  &:hover {
+    background-color: #ff6d63;
+    filter: drop-shadow(3px 3px 0px #f44336);
+    transition: 0.3s all ease-out;
+  }
 `;
 
 export const NormalButton = styled.button`
@@ -74,12 +81,19 @@ export const NormalButton = styled.button`
   border: none;
   border-radius: 10px;
   background-color: #4709a0;
-  filter: drop-shadow(2px 2px 2px #2c0169);
+  filter: drop-shadow(3px 3px 0px #9246ff);
   color: #fff;
+
+  &:hover {
+    background-color: #9246ff;
+    filter: drop-shadow(3px 3px 0px #4709a0);
+    transition: 0.3s all ease-out;
+  }
 
   &:disabled {
     background-color: #e7e7e7;
-    color: black;
+    filter: drop-shadow(3px 3px 0px #e7e7e7);
+    color: #aaaaaa;
     cursor: not-allowed;
   }
 `;
@@ -90,7 +104,7 @@ export const BlueButton = styled.button`
   border: none;
   border-radius: 10px;
   background-color: #00b2ec;
-  filter: drop-shadow(2px 2px 2px #00b2ec);
+  filter: drop-shadow(3px 3px 0px #4ed3ff);
   border: 2px solid #00b2ec;
   color: #fff;
 
@@ -98,6 +112,12 @@ export const BlueButton = styled.button`
     background-color: #e7e7e7;
     color: black;
     cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4ed3ff;
+    filter: drop-shadow(3px 3px 0px #00b2ec);
+    transition: 0.3s all ease-out;
   }
 `;
 
@@ -108,14 +128,44 @@ export const TransButton = styled.button`
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid #fff;
-  filter: drop-shadow(2px 2px 2px #fff);
 
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: black;
+    filter: drop-shadow(3px 3px 0px #f44336);
+    transition: 0.3s all ease-out;
+  }
+
+  &:disabled {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: not-allowed;
+  }
+`;
+
+export const NavButton = styled.button`
+  width: auto;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00b2ec;
+  font-size: 12px;
+  filter: drop-shadow(3px 3px 0px #4ed3ff);
+  border: 2px solid #00b2ec;
   color: #fff;
 
   &:disabled {
     background-color: #e7e7e7;
     color: black;
     cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4ed3ff;
+    filter: drop-shadow(3px 3px 0px #00b2ec);
+    transition: 0.3s all ease-out;
   }
 `;
 

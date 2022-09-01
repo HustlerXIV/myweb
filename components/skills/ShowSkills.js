@@ -80,4 +80,8 @@ const Title = styled.div`
   @media (max-width: 1024px) {
     font-size: 40px;
   }
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
 `;

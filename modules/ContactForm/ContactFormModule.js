@@ -77,6 +77,11 @@ const Card = styled.div`
   box-shadow: inset 0 0 20px #0078ae;
   gap: 10px;
 
+  background-image: url("/contact-me.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: -10% 120%;
+
   @media (max-width: 1024px) {
     padding: 30px;
   }
@@ -84,6 +89,7 @@ const Card = styled.div`
   @media (max-width: 576px) {
     padding: 20px;
     flex-direction: column;
+    background-image: none;
   }
 `;
 

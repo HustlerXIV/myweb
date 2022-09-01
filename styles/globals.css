@@ -22,17 +22,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #022f61;
-  background-image: linear-gradient(
-    to right,
-    #001b48,
-    #012554,
-    #022f61,
-    #023a6d,
-    #02457a
-  );
+  background-image: url("/on-planet-21-02.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .mt-10 {

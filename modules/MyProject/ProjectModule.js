@@ -24,9 +24,9 @@ export default function ProjectModule({ data }) {
   return (
     <Container>
       <Left data-aos="fade-right">
-        <ResponsiveImage src="/me-right.png" />
+        <ResponsiveImage TBmaxWidth="400px" src="/me-right.png" />
       </Left>
-      <Right data-aos="fade-right">
+      <Right>
         <Card>
           <HeadContainer>
             <div>
@@ -89,18 +89,28 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  flex: 1;
+  width: 45%;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const Right = styled.div`
-  flex: 1;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 const Card = styled.div`

@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Desc, DivCenter, DivWidth, SubTopic, Topic } from "@components/style";
+import {
+  Desc,
+  DivCenter,
+  DivWidth,
+  ResponsiveImage,
+  SubTopic,
+  Topic,
+} from "@components/style";
 import TimeLine from "@components/TimeLine";
 import { BiCake } from "react-icons/bi";
 import { MdMilitaryTech } from "react-icons/md";
@@ -32,11 +39,13 @@ const MyEduData = [
 function AboutMeModule() {
   return (
     <div
-      data-aos="fade-up"
       className="container mx-auto mb-20 max-w-7xl px-6 sm:px-6 lg:px-8"
       id="about-me"
     >
       <FrameCard className="bg-normalColor shadow-2xl">
+        <AbsoluteDiv>
+          <ResponsiveImage maxWidth="430px" src="/3-with-rocket.png" />
+        </AbsoluteDiv>
         <Topic style={{ margin: "0px auto" }}>ABOUT ME</Topic>
         <SectionContainer>
           <DivWidth maxWidth="430px">
@@ -118,6 +127,23 @@ const FrameCard = styled.div`
   margin: 0px auto;
   border-radius: 10px;
   background-color: #f9f9f9;
+  position: relative;
+
+  /* background-image: url("/3-with-rocket.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: -10% 120%; */
+`;
+
+const AbsoluteDiv = styled.div`
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  z-index: 100;
+
+  @media (max-width: 580px) {
+    display: none;
+  }
 `;
 
 export default AboutMeModule;

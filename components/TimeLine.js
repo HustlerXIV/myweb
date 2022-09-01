@@ -44,7 +44,9 @@ function TimeLine() {
       <ul className="timeline">
         {experiences.map((item, index) => (
           <li key={index}>
-            <Desc>{`${item.year} at ${item.company} (${item.total})`}</Desc>
+            <Desc
+              style={{ color: "#B2B8BB" }}
+            >{`${item.year} at ${item.company} (${item.total})`}</Desc>
             <Text>{item.name}</Text>
           </li>
         ))}

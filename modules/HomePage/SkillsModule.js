@@ -21,8 +21,10 @@ const Container = styled.div`
   gap: 40px;
   justify-content: center;
   max-height: 100%;
+  margin-top: 50px;
   @media (max-width: 576px) {
     flex-direction: column;
+    margin-top: 0px;
   }
 `;
 

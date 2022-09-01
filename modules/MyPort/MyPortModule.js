@@ -31,12 +31,11 @@ const ButtonContainer = styled.div`
 const SectionTitle = styled.div`
   width: auto;
   max-width: 400px;
-  padding: 10px 20px;
-  margin: 0px auto 0px auto;
-  font-size: 30px;
+  margin: 10px auto 0px auto;
+  font-size: 40px;
   font-weight: bold;
-  background-color: #fff;
   border-radius: 8px;
+  color: #fff;
   box-shadow: 0 0px 80px rgba(0, 0, 0, 0.12);
   text-align: center;
 `;

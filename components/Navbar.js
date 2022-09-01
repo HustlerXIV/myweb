@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import styled from "styled-components";
+import { BlueButton, NavButton } from "./style";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -47,17 +48,8 @@ export default function Navbar() {
                     {navigation.map((item) => {
                       const isActive = router.asPath === item.href;
                       return (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            isActive
-                              ? "font-bold text-white bg-subColor hover:shadow-2xl"
-                              : "font-bold text-white bg-subColor hover:shadow-2xl",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
-                        >
-                          {item.name}
+                        <a key={item.name} href={item.href}>
+                          <NavButton>{item.name}</NavButton>
                         </a>
                       );
                     })}
