@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Footer from "@components/Footer";
+import Navbar from "@components/Navbar";
 import "../styles/globals.css";
 import "../styles/style.css";
 import AOS from "aos";

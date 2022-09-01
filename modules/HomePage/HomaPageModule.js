@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../components/homepage/Banner";
+import Banner from "@components/homepage/Banner";
 import AboutMeModule from "../AboutMe/AboutMeModule";
 import ContactFormModule from "../ContactForm/ContactFormModule";
 import MyPortModule from "../MyPort/MyPortModule";

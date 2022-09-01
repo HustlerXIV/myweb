@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import MyProjectsModule from "../../modules/MyProject/MyProjectsModule";
+import MyProjectsModule from "@modules/MyProject/MyProjectsModule";
 import { certData } from "../../styles/data/cert-data";
 import { myProjectData } from "../../styles/data/myproject-data";
 

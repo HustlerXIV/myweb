@@ -1,5 +1,5 @@
 import React from "react";
-import ShowSkills from "../../components/skills/ShowSkills";
+import ShowSkills from "@components/skills/ShowSkills";
 import { MdWeb } from "react-icons/md";
 import styled from "styled-components";
 export default function SkillsModule() {

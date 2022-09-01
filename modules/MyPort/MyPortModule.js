@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import Carousel from "../../components/Carousel";
-import { BlueButton, DivCenter, FlexCols, Topic } from "../../components/style";
+import Carousel from "@components/Carousel";
+import { BlueButton, DivCenter, FlexCols, Topic } from "@components/style";
 
 function MyPortModule({ projectData }) {
   return (

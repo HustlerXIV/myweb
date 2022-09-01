@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import styled from "styled-components";
-import Card from "../../components/Card";
+import Card from "@components/Card";
 import { FcNext, FcPrevious } from "react-icons/fc";
 
 export default function CertModule({ certData }) {

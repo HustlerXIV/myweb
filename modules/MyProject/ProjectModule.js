@@ -7,8 +7,8 @@ import {
   ResponsiveImage,
   SubTopic,
   Topic,
-} from "../../components/style";
-import Skills from "../../components/skills/Skills";
+} from "@components/style";
+import Skills from "@components/skills/Skills";
 
 import Link from "next/link";
 import _ from "lodash";

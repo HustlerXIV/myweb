@@ -1,17 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  Desc,
-  DivCenter,
-  DivWidth,
-  SubTopic,
-  Topic,
-} from "../../components/style";
-import TimeLine from "../../components/TimeLine";
+import { Desc, DivCenter, DivWidth, SubTopic, Topic } from "@components/style";
+import TimeLine from "@components/TimeLine";
 import { BiCake } from "react-icons/bi";
 import { MdMilitaryTech } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import DescWithIcon from "../../components/Form/DescWithIcon";
+import DescWithIcon from "@components/Form/DescWithIcon";
 
 const MyInfoData = [
   {

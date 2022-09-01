@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HomaPageModule from "../modules/HomePage/HomaPageModule";
+import HomaPageModule from "@modules/HomePage/HomaPageModule";
 import { myProjectData } from "../styles/data/myproject-data";
 
 export default function Home() {

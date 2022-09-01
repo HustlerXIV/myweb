@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import DescWithIcon from "../../components/Form/DescWithIcon";
-import InputForm from "../../components/Form/InputForm";
-import InputTextArea from "../../components/Form/InputTextArea";
+import DescWithIcon from "@components/Form/DescWithIcon";
+import InputForm from "@components/Form/InputForm";
+import InputTextArea from "@components/Form/InputTextArea";
 import { BsTelephoneForward } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineLinkedin } from "react-icons/ai";
-import { BlueButton, TransButton } from "../../components/style";
+import { BlueButton, TransButton } from "@components/style";
 
 const MyInfoData = [
   {
