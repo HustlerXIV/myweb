@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, TabPanel } from "@components/tabs/Tabs";
+import { Tabs, Tab, TabPanel } from "@components/Tabs/tabs";
 import styled from "styled-components";
 import MyPortBanner from "@components/MyPort/MyPortBanner";
 import MyPortBanner2 from "@components/MyPort/MyPortBanner2";
