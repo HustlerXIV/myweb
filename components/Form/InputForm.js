@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-export default function InputForm({ label, placeholder, name, id, error }) {
+export default function InputForm({
+  label,
+  placeholder,
+  name,
+  id,
+  error,
+  setForm,
+}) {
+  const [value, setValue] = useState("");
+  const handleOnChange = (e) => {
+    setValue(e.target.value);
+    setForm(e.target.value);
+  };
+
   return (
     <Container>
       <label className="text-white">{label}</label>
       <Input
         type="text"
         id={id}
+        value={value}
         name={name}
+        onChange={handleOnChange}
         placeholder={placeholder}
         error={error}
       />

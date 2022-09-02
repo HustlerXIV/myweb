@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-export default function InputTextArea({ label, placeholder, name, id }) {
+export default function InputTextArea({
+  label,
+  placeholder,
+  name,
+  id,
+  setForm,
+  type = "text",
+}) {
+  const [value, setValue] = useState("");
+  const handleOnChange = (e) => {
+    setValue(e.target.value);
+    setForm(e.target.value);
+  };
   return (
     <Container>
       <label className="text-white">{label}</label>
-      <Input type="text" id={id} name={name} placeholder={placeholder} />
+      <Input
+        type={type}
+        id={id}
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleOnChange}
+      />
     </Container>
   );
 }

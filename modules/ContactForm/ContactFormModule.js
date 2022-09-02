@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import DescWithIcon from "@components/Form/DescWithIcon";
 import InputForm from "@components/Form/InputForm";
@@ -7,6 +7,7 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BlueButton, TransButton } from "@components/style";
+import axios from "axios";
 
 const MyInfoData = [
   {
@@ -27,6 +28,42 @@ const MyInfoData = [
 ];
 
 export default function ContactFormModule() {
+  const resetFormData = {
+    firstname: null,
+    lastname: null,
+    email: null,
+    subject: null,
+    msg: null,
+  };
+  const [formData, setFormData] = useState(resetFormData);
+  const handleFormData = (value) => {
+    setFormData({
+      ...formData,
+      ...value,
+    });
+  };
+
+  console.log("formData", formData);
+  const SendMsgLineApi = () => {
+    try {
+      const options = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+          Authorization: `Bearer PBAtXC74RpLqdzS4B2mPd1jjCQmShLZG9uWwrphPRma`,
+        },
+        url: `https://notify-api.line.me/api/notify`,
+        message: `Name: ${formData.firstname} ${formData.lastname} ${(<br />)} 
+        Email: ${formData.email} ${(<br />)}
+        Subject: ${formData.subject} ${(<br />)}
+        Msg: ${formData.msg}`,
+      };
+      const callApi = axios(options);
+      return callApi;
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div
       data-aos="fade-up"
@@ -49,14 +86,52 @@ export default function ContactFormModule() {
         </Left>
         <Right>
           <HalfContainer column="column">
-            <InputForm id="firstname" name="firstname" label="First name" />
-            <InputForm id="lastname" name="lastname" label="Last name" />
+            <InputForm
+              id="firstname"
+              name="firstname"
+              label="First name"
+              setForm={(value) => {
+                handleFormData({ firstname: value });
+              }}
+            />
+            <InputForm
+              id="lastname"
+              name="lastname"
+              label="Last name"
+              setForm={(value) => {
+                handleFormData({ lastname: value });
+              }}
+            />
           </HalfContainer>
-          <InputForm id="email" name="email" label="Email" />
-          <InputForm id="subject" name="subject" label="Subject" />
-          <InputTextArea id="msg" name="msg" label="Message" />
+          <InputForm
+            id="email"
+            name="email"
+            label="Email"
+            type="email"
+            setForm={(value) => {
+              handleFormData({ email: value });
+            }}
+          />
+          <InputForm
+            id="subject"
+            name="subject"
+            label="Subject"
+            setForm={(value) => {
+              handleFormData({ subject: value });
+            }}
+          />
+          <InputTextArea
+            id="msg"
+            name="msg"
+            label="Message"
+            setForm={(value) => {
+              handleFormData({ msg: value });
+            }}
+          />
           <HalfContainer style={{ marginTop: "10px" }}>
-            <BlueButton>SEND</BlueButton>
+            <BlueButton type="submit" onClick={SendMsgLineApi}>
+              SEND
+            </BlueButton>
             <TransButton>CLEAR</TransButton>
           </HalfContainer>
         </Right>
