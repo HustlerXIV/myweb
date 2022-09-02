@@ -17,6 +17,8 @@ export default function ProjectModule({ data }) {
   const title = _.get(data, "title", "");
   const type = _.get(data, "type", "");
   const desc = _.get(data, "desc", "");
+  const img = _.get(data, "img", "");
+
   const utilities = _.get(data, "utilities", []);
   const demo = _.get(data, "demo", "");
   const isPort = _.get(data, "isPort", false);
@@ -24,7 +26,12 @@ export default function ProjectModule({ data }) {
   return (
     <Container>
       <Left data-aos="fade-right">
-        <ResponsiveImage TBmaxWidth="400px" src="/me-right.png" />
+        <ResponsiveImage
+          TBmaxWidth="800px"
+          MBmaxWidth="500px"
+          MB1maxWidth="500px"
+          src={img}
+        />
       </Left>
       <Right>
         <Card>
@@ -85,6 +92,10 @@ const Container = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
+  }
+
+  @media (max-width: 750px) {
+    justify-content: flex-start;
   }
 `;
 

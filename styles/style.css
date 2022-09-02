@@ -42,6 +42,21 @@
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  background-image: linear-gradient(
+    to right top,
+    #23208b,
+    #313b9f,
+    #4054b1,
+    #526dc3,
+    #6786d3,
+    #6c8dd4,
+    #7193d5,
+    #779ad6,
+    #6c8fc9,
+    #6185bd,
+    #567ab0,
+    #4b70a4
+  );
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.12);
   font-size: 16px;
   width: 320px;

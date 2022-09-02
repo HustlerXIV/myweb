@@ -54,7 +54,7 @@ export const ResponsiveImage = styled.img`
   }
 
   @media (max-width: 750px) {
-    max-width: 300px;
+    max-width: ${(props) => (props.MB1maxWidth ? props.MB1maxWidth : "300px")};
   }
 
   @media (max-width: 576px) {
