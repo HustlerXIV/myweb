@@ -14,6 +14,9 @@ export const SubTopic = styled.div`
   width: ${(props) => props.width};
   border-bottom: ${(props) => props.underline};
   padding-bottom: ${(props) => props.pb};
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: ${(props) => (props.color ? props.color : "black")};
 `;
 
@@ -203,5 +206,71 @@ export const WidthFlex = styled.div`
   width: 50%;
   @media (max-width: 640px) {
     width: 100%;
+  }
+`;
+
+export const ResumeButton = styled.button`
+  width: auto;
+  padding: 12px 22px;
+  border: none;
+  background-color: #00b2ec;
+  filter: drop-shadow(3px 3px 0px #4ed3ff);
+  border: 2px solid #00b2ec;
+  color: #fff;
+
+  &:disabled {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4ed3ff;
+    filter: drop-shadow(3px 3px 0px #00b2ec);
+    transition: 0.3s all ease-out;
+  }
+`;
+
+export const PortButton = styled.button`
+  width: auto;
+  padding: 12px 22px;
+  border: none;
+  background-color: #1b255a;
+  filter: drop-shadow(3px 3px 0px #4ed3ff);
+  border: 2px solid #00b2ec;
+  color: #fff;
+
+  &:disabled {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4ed3ff;
+    filter: drop-shadow(3px 3px 0px #00b2ec);
+    transition: 0.3s all ease-out;
+  }
+`;
+
+export const LetsConnectButton = styled.button`
+  width: auto;
+  padding: 12px 22px;
+  border: none;
+  background-color: #1b255a;
+  filter: drop-shadow(3px 3px 0px #4ed3ff);
+  border: 2px solid #00b2ec;
+  color: #fff;
+
+  &:disabled {
+    background-color: #e7e7e7;
+    color: black;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: #4ed3ff;
+    filter: drop-shadow(3px 3px 0px #00b2ec);
+    transition: 0.3s all ease-out;
   }
 `;

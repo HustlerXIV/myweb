@@ -4,36 +4,36 @@ import { Desc } from "./style";
 
 const experiences = [
   {
-    name: "Internship (Graphic Designer)",
-    year: "2020",
+    name: "Graphic Designer (Internship)",
+    year: "Jan - Mar 2020",
     total: "3 Months",
-    company: "InterSite Co.,Ltd.",
+    company: "InterSite (Thailand) Co.,Ltd.",
     finisied: true,
   },
   {
     name: "Web Developer & Graphic Designer",
     year: "2019-2020",
     total: "1 Year",
-    company: "Franco-Thai Chamber of Commerce",
+    company: "Self employed",
     finisied: true,
   },
   {
     name: "Communication Coordinator",
-    year: "2020-2021",
+    year: "Oct 2020-2021",
     total: "1 Year 2 Months",
     company: "Franco-Thai Chamber of Commerce",
     finisied: true,
   },
   {
-    name: "Volunteer (Web Developer)",
-    year: "2021-NOW",
-    total: "1 Year 3 Months",
+    name: "Web Developer (Volunteer)",
+    year: "Oct 2020-NOW",
+    total: "2 Years",
     company: "Soilfish Co.,Ltd.",
   },
   {
     name: "Software Developer",
-    year: "2021-NOW",
-    total: "9 Months",
+    year: "Dec 2021-NOW",
+    total: "10 Months",
     company: "Soilfish Co.,Ltd.",
   },
 ];

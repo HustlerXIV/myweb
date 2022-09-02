@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import styled from "styled-components";
-import { BlueButton, NavButton } from "./style";
+import { BlueButton, LetsConnectButton, NavButton } from "./style";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -53,9 +53,7 @@ export default function Navbar() {
                         </a>
                       );
                     })}
-                    <button className="text-white rounded-md px-6 py-4 drop-shadow-lg px-6 py-2 bg-transparent border-dashed border-2 border-subColor transition ease-out hover:shadow-2xl">
-                      {`LET'S CONNECT`}
-                    </button>
+                    <LetsConnectButton>{`LET'S CONNECT`}</LetsConnectButton>
                   </div>
                 </div>
               </div>

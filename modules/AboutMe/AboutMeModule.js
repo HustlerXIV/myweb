@@ -13,6 +13,8 @@ import { BiCake } from "react-icons/bi";
 import { MdMilitaryTech } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import DescWithIcon from "@components/Form/DescWithIcon";
+import { FcNext, FcPrevious } from "react-icons/fc";
+import { BsSlashLg } from "react-icons/bs";
 
 const MyInfoData = [
   {
@@ -46,13 +48,25 @@ function AboutMeModule() {
         <AbsoluteDiv>
           <ResponsiveImage maxWidth="430px" src="/3-with-rocket.png" />
         </AbsoluteDiv>
-        <Topic style={{ margin: "0px auto" }}>ABOUT ME</Topic>
+        <Topic
+          style={{
+            margin: "0px auto",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <FcPrevious />
+          ABOUT ME <div style={{ color: "#2096F3", marginLeft: "5px" }}>/</div>
+          <FcNext />
+        </Topic>
         <SectionContainer>
           <DivWidth maxWidth="430px">
             <SubTopic
               underline="3px solid #000"
               width="180px"
-              style={{ marginBottom: "10px" }}
+              style={{
+                marginBottom: "10px",
+              }}
             >
               MY INFORMATION
             </SubTopic>
@@ -83,7 +97,7 @@ function AboutMeModule() {
             <Desc>
               {`Bachelor's degree`}
               <br />
-              Major FRENCH Minor International Relations
+              Major FRENCH <br /> Minor International Relations
               <br />
               Faculty of Liberal Arts, Rangsit University, Pathumthani
               (Thailand) 2016 - 2020 (GPA - 3.37 Second class honors)

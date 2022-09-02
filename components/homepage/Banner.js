@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FcNext, FcPrevious } from "react-icons/fc";
-import { ResponsiveImage, Topic } from "../style";
+import { PortButton, ResponsiveImage, ResumeButton, Topic } from "../style";
 function Banner() {
   return (
     <div style={{ position: "relative" }}>
@@ -28,18 +28,14 @@ function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="drop-shadow-lg text-white px-6 py-2 bg-subColor transition ease-out hover:shadow-2xl">
-                  MY RESUME
-                </button>
+                <ResumeButton>RESUME (PDF)</ResumeButton>
               </a>
               <a
                 href="https://drive.google.com/file/d/1tZrdlxQAT60c_F850_wWELUHVjutwdN1/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="drop-shadow-lg text-white px-6 py-2 bg-transparent border-dashed border-2 border-subColor transition ease-out hover:shadow-2xl">
-                  PORTFOLIO
-                </button>
+                <PortButton>PORTFOLIO</PortButton>
               </a>
             </div>
           </div>
