@@ -43,7 +43,6 @@ export default function ContactFormModule() {
     });
   };
 
-  console.log("formData", formData);
   const SendMsgLineApi = () => {
     try {
       const options = {
@@ -129,10 +128,10 @@ export default function ContactFormModule() {
             }}
           />
           <HalfContainer style={{ marginTop: "10px" }}>
-            <BlueButton type="submit" onClick={SendMsgLineApi}>
+            <BlueButton disabled type="submit" onClick={SendMsgLineApi}>
               SEND
             </BlueButton>
-            <TransButton>CLEAR</TransButton>
+            <TransButton disabled>CLEAR</TransButton>
           </HalfContainer>
         </Right>
       </Card>

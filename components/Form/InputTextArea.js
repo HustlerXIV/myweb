@@ -21,8 +21,9 @@ export default function InputTextArea({
         type={type}
         id={id}
         name={name}
-        placeholder={placeholder}
+        placeholder="Not available"
         value={value}
+        disabled
         onChange={handleOnChange}
       />
     </Container>

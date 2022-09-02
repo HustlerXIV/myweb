@@ -10,7 +10,11 @@ export default function SkillsModule() {
     >
       <Container>
         <ShowSkills skillList={SkillsData} />
-        <ShowSkills skillList={SkillsData} headTitle="SOFT SKILLS" />
+        <ShowSkills
+          skillList={SoftSkill}
+          isSkill={false}
+          headTitle="SOFT SKILLS"
+        />
       </Container>
     </div>
   );
@@ -34,83 +38,85 @@ const SkillsData = [
     icon: <MdWeb />,
     data: [
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/html.png",
         title: "HTML",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/css.jpeg",
         title: "CSS",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/js.svg.png",
         title: "JavaScript",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/php.png",
         title: "PHP",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/mysql.png",
         title: "MySQL",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/react.png",
         title: "ReactJs",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/nextjs.png",
         title: "NextJs",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/nestjs.png",
         title: "NestJs",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+        logo: "/hardskills/kotlin.jpeg",
         title: "Kotlin",
+      },
+      {
+        logo: "/hardskills/docker.png",
+        title: "Docker",
+      },
+      {
+        logo: "/hardskills/cypress.png",
+        title: "CyPress",
       },
     ],
   },
   {
-    mainTitle: "Web Development",
+    mainTitle: "Photo & Video Edition",
     icon: <MdWeb />,
     data: [
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "HTML",
+        logo: "/hardskills/photoshop.jpeg",
+        title: "Photoshop",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "CSS",
+        logo: "/hardskills/ai.jpeg",
+        title: "Illustrator",
       },
       {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "JavaScript",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "PHP",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "MySQL",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "ReactJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "NextJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "NestJs",
-      },
-      {
-        logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-        title: "Kotlin",
+        logo: "/hardskills/ae.png",
+        title: "After Effect",
       },
     ],
+  },
+];
+
+const SoftSkill = [
+  {
+    title: "Time management skills",
+  },
+  {
+    title: "Analytical thinking",
+  },
+  {
+    title: "Critical Thinking and Problem solving",
+  },
+  {
+    title: "Teamwork",
+  },
+  {
+    title: "Eager to learn new things",
   },
 ];

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { BlueButton } from "../style";
 import Skills from "./Skills";
-
+import { FcNext, FcPrevious } from "react-icons/fc";
 export default function ShowSkills({
   headTitle = "HARD SKILLS",
   sectionFlex = "flex-start",
   skillList,
+  color = "#fff",
+  isSkill = true,
 }) {
   const [open, setOpen] = useState(false);
 
@@ -26,10 +28,35 @@ export default function ShowSkills({
           </BlueButton>
         </ButtonContainer>
       </DetailContainer>
-      {open && <Skills dataList={skillList} />}
+      {open && isSkill ? (
+        <Skills color={color} dataList={skillList} />
+      ) : (
+        <ListContainer>
+          {skillList.map((item, index) => (
+            <SkillList key={index}>
+              <FcNext />
+              {item.title}
+            </SkillList>
+          ))}
+        </ListContainer>
+      )}
     </BannerCard>
   );
 }
+
+const ListContainer = styled.div`
+  margin: 40px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const SkillList = styled.div`
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #fff;
+`;
 
 const BannerCard = styled.div`
   width: 480px;

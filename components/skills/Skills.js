@@ -2,12 +2,12 @@ import _ from "lodash";
 import React from "react";
 import styled from "styled-components";
 
-export default function Skills({ dataList, maxWidth }) {
+export default function Skills({ dataList, maxWidth, color }) {
   return (
     <SectionContainer maxWidth={maxWidth}>
       {_.defaultTo(dataList, []).map((item, index) => (
         <div key={index}>
-          <ListTitleContainer>
+          <ListTitleContainer color={color}>
             <div style={{ marginRight: "10px" }}>{item.icon}</div>
             {item.mainTitle}
           </ListTitleContainer>
@@ -27,7 +27,7 @@ export default function Skills({ dataList, maxWidth }) {
 const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   width: auto;
   max-width: ${(props) => (props.maxWidth ? props.maxWidth : "480px")};
   margin: 0px auto;
@@ -38,6 +38,8 @@ const ListTitleContainer = styled.div`
   display: flex;
   align-items: center;
   font-size: 16px;
+  color: ${(p) => p.color};
+  margin-bottom: 10px;
 `;
 
 const Container = styled.div`
@@ -71,7 +73,7 @@ const SkillsTextBox = styled.div`
   transform: translate(-50%, -50%);
   width: 70px;
   height: auto;
-  background-color: #29dde0;
+  background-color: #1b245a;
   border-radius: 4px;
   color: #fff;
   text-align: center;
