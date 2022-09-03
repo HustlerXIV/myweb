@@ -1,11 +1,17 @@
 import React from "react";
+import { ResponsiveImage } from "./style";
 
-function Card({ title, type, desc, link, img }) {
+function Card({ title, type, desc, link, img, isPort }) {
   return (
     <>
       <a href={link} className="card">
         <div className="cards">
-          <img src={img} className="card-image" alt={type} />
+          <ResponsiveImage
+            style={{ margin: `${isPort ? "20px 0px 10px 10px" : "0px"}` }}
+            src={img}
+            className="card-image"
+            alt={type}
+          />
           <div className="card-overlay">
             <div className="card-header">
               <svg className="card-arc" xmlns="http://www.w3.org/2000/svg">

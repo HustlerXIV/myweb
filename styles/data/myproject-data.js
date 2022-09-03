@@ -5,7 +5,7 @@ export const myProjectData = [
     id: 1,
     title: "True IDC Cloud",
     type: "Professional Work",
-    desc: "ddddddd",
+    desc: "",
     img: "/port/tidc2.png",
     slug: "true-idc-cloud",
     link: "/my-projects/true-idc-cloud",
@@ -18,40 +18,40 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/css.jpeg",
             title: "CSS",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/js.svg.png",
             title: "JavaScript",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "PHP",
-          },
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/mysql.png",
             title: "MySQL",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/react.png",
             title: "ReactJs",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/nextjs.png",
             title: "NextJs",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/nestjs.png",
             title: "NestJs",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "Kotlin",
+            logo: "/hardskills/docker.png",
+            title: "Docker",
+          },
+          {
+            logo: "/hardskills/cypress.png",
+            title: "CyPress",
           },
         ],
       },
@@ -61,7 +61,7 @@ export const myProjectData = [
     id: 2,
     title: "PASONA THAILAND",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/pasona.png",
     slug: "pasona-th",
     link: "/my-projects/pasona-th",
@@ -74,40 +74,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/css.jpeg",
             title: "CSS",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/js.svg.png",
             title: "JavaScript",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/php.png",
             title: "PHP",
           },
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "MySQL",
-          },
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "ReactJs",
-          },
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "NextJs",
-          },
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "NestJs",
-          },
-          {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
-            title: "Kotlin",
+            logo: "/hardskills/wordpress.png",
+            title: "WordPress",
           },
         ],
       },
@@ -117,7 +101,7 @@ export const myProjectData = [
     id: 3,
     title: "Deepscope",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/deep.png",
     slug: "deepscope",
     link: "/my-projects/deepscope",
@@ -130,8 +114,16 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
           },
         ],
       },
@@ -141,7 +133,7 @@ export const myProjectData = [
     id: 4,
     title: "Scripture Union Thailand",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/su.png",
     slug: "su-thailand",
     link: "/my-projects/su-thailand",
@@ -154,8 +146,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/php.png",
+            title: "PHP",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
           },
         ],
       },
@@ -165,7 +173,7 @@ export const myProjectData = [
     id: 5,
     title: "True IDC Cloud (CMS)",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/tidc-cms.png",
     slug: "true-idc-cloud-cms",
     link: "/my-projects/true-idc-cloud-cms",
@@ -178,8 +186,36 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
+          },
+          {
+            logo: "/hardskills/nestjs.png",
+            title: "NestJs",
+          },
+          {
+            logo: "/hardskills/docker.png",
+            title: "Docker",
           },
         ],
       },
@@ -189,7 +225,7 @@ export const myProjectData = [
     id: 6,
     title: "MY WEALTH",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/mywealth.png",
     slug: "my-welath",
     link: "/my-projects/my-welath",
@@ -202,8 +238,33 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
+          },
+          {
+            logo: "/hardskills/kotlin.jpeg",
+            title: "Kotlin",
+          },
+          {
+            logo: "/hardskills/docker.png",
+            title: "Docker",
           },
         ],
       },
@@ -213,7 +274,7 @@ export const myProjectData = [
     id: 7,
     title: "AMS (CMS)",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/ams.png",
     slug: "ams-cms",
     link: "/my-projects/ams-cms",
@@ -226,8 +287,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
           },
         ],
       },
@@ -237,7 +314,7 @@ export const myProjectData = [
     id: 8,
     title: "Le français pour l'avenir",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/lfp.png",
     slug: "le-francais-pour-lavenir",
     link: "/my-projects/le-francais-pour-lavenir",
@@ -250,8 +327,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/php.png",
+            title: "PHP",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
           },
         ],
       },
@@ -261,7 +354,7 @@ export const myProjectData = [
     id: 9,
     title: "CNFP + AUF",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/cnfp.png",
     slug: "cnfp-auf",
     link: "/my-projects/cnfp-auf",
@@ -274,8 +367,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/php.png",
+            title: "PHP",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
           },
         ],
       },
@@ -285,7 +394,7 @@ export const myProjectData = [
     id: 10,
     title: "Zapper (Thailand)",
     type: "Professional Work",
-    desc: "ddddd",
+    desc: "",
     img: "/port/zapper.png",
     slug: "zapper",
     link: "/my-projects/zapper",
@@ -298,8 +407,28 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
           },
         ],
       },
@@ -309,7 +438,7 @@ export const myProjectData = [
     id: 11,
     title: "My Port V1",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p6.png",
     slug: "my-port-v1",
     link: "/my-projects/my-port-v1",
@@ -322,8 +451,20 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
           },
         ],
       },
@@ -333,7 +474,7 @@ export const myProjectData = [
     id: 12,
     title: "E-COMMERCE",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p7.png",
     slug: "e-commerce",
     link: "/my-projects/e-commerce",
@@ -346,8 +487,24 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "MySQL",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
           },
         ],
       },
@@ -357,7 +514,7 @@ export const myProjectData = [
     id: 13,
     title: "To do list",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p1.png",
     slug: "to-do-list",
     link: "/my-projects/to-do-list",
@@ -370,8 +527,20 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
           },
         ],
       },
@@ -381,7 +550,7 @@ export const myProjectData = [
     id: 14,
     title: "TIC-TAC-TOE",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p5.png",
     slug: "tic-tac-toe",
     link: "/my-projects/tic-tac-toe",
@@ -394,8 +563,20 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
           },
         ],
       },
@@ -405,7 +586,7 @@ export const myProjectData = [
     id: 15,
     title: "Countdown Timer",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p3.png",
     slug: "countdown-timer",
     link: "/my-projects/countdown-timer",
@@ -418,8 +599,16 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
           },
         ],
       },
@@ -429,7 +618,7 @@ export const myProjectData = [
     id: 16,
     title: "Quiz App",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/p4.png",
     slug: "quiz-app",
     link: "/my-projects/quiz-app",
@@ -442,8 +631,20 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
           },
         ],
       },
@@ -453,7 +654,7 @@ export const myProjectData = [
     id: 17,
     title: "My Portfolio V2",
     type: "Learning Project",
-    desc: "ddddd",
+    desc: "",
     img: "/port/myy.png",
     slug: "my-port-2",
     link: "/my-projects/my-port-2",
@@ -466,18 +667,51 @@ export const myProjectData = [
         icon: <MdWeb />,
         data: [
           {
-            logo: "https://blog.urbanpiper.com/content/images/2021/06/logo-react.png",
+            logo: "/hardskills/html.png",
             title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
+          },
+          {
+            logo: "/hardskills/docker.png",
+            title: "Docker",
           },
         ],
       },
     ],
   },
   {
+    id: 100,
+    title: "The Fundamental of Digital Marketing",
+    type: "Certificate",
+    desc: "",
+    img: "/certs/gg.png",
+    slug: "fundamental-dm",
+    link: "/my-projects/fundamental-dm",
+    principal: false,
+    demo: "https://cloud.trueidc.com/",
+    isPort: false,
+  },
+  {
     id: 101,
     title: "Mastering Web Development with React",
     type: "Certificate",
-    desc: "ddddddd",
+    desc: "",
     img: "/certs/mastering-react.png",
     slug: "mastering-react",
     link: "/my-projects/mastering-react",
@@ -489,7 +723,7 @@ export const myProjectData = [
     id: 102,
     title: "Ionic React Fundamentals",
     type: "Certificate",
-    desc: "ddddd",
+    desc: "",
     img: "/certs/ionic.png",
     slug: "ionic-react-fundamentals",
     link: "/my-projects/ionic-react-fundamentals",
@@ -501,8 +735,8 @@ export const myProjectData = [
     id: 103,
     title: "Introduction to Computer Science",
     type: "Certificate",
-    desc: "ddddd",
-    img: "/certs/cs.png",
+    desc: "",
+    img: "/certs/comsci.png",
     slug: "intro-com-sci",
     link: "/my-projects/intro-com-sci",
     principal: false,
@@ -513,7 +747,7 @@ export const myProjectData = [
     id: 104,
     title: "Effective Leadership",
     type: "Certificate",
-    desc: "ddddd",
+    desc: "",
     img: "/certs/el.png",
     slug: "intro-com-sci",
     link: "/my-projects/intro-com-sci",

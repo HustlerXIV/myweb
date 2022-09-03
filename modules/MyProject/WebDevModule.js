@@ -19,6 +19,7 @@ export default function WebDevModule({ webData }) {
                   type={item.type}
                   desc={item.desc}
                   img={item.img}
+                  isPort={item.isPort}
                 />
               </eachCard>
             </a>
