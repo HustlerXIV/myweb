@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import DescWithIcon from "@components/Form/DescWithIcon";
 import InputForm from "@components/Form/InputForm";
@@ -8,6 +8,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BlueButton, TransButton } from "@components/style";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 const MyInfoData = [
   {
@@ -43,25 +44,26 @@ export default function ContactFormModule() {
     });
   };
 
-  const SendMsgLineApi = () => {
-    try {
-      const options = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-          Authorization: `Bearer PBAtXC74RpLqdzS4B2mPd1jjCQmShLZG9uWwrphPRma`,
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_b82ttf4",
+        "template_g2cft5k",
+        form.current,
+        "fK3ajTjAX9N9_lRLl"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
         },
-        url: `https://notify-api.line.me/api/notify`,
-        message: `Name: ${formData.firstname} ${formData.lastname} ${(<br />)} 
-        Email: ${formData.email} ${(<br />)}
-        Subject: ${formData.subject} ${(<br />)}
-        Msg: ${formData.msg}`,
-      };
-      const callApi = axios(options);
-      return callApi;
-    } catch (e) {
-      console.log(e);
-    }
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div
@@ -84,55 +86,53 @@ export default function ContactFormModule() {
           </CardInfo>
         </Left>
         <Right>
-          <HalfContainer column="column">
-            <InputForm
-              id="firstname"
-              name="firstname"
-              label="First name"
-              setForm={(value) => {
-                handleFormData({ firstname: value });
-              }}
-            />
-            <InputForm
-              id="lastname"
-              name="lastname"
-              label="Last name"
-              setForm={(value) => {
-                handleFormData({ lastname: value });
-              }}
-            />
-          </HalfContainer>
-          <InputForm
-            id="email"
-            name="email"
-            label="Email"
-            type="email"
-            setForm={(value) => {
-              handleFormData({ email: value });
-            }}
-          />
-          <InputForm
-            id="subject"
-            name="subject"
-            label="Subject"
-            setForm={(value) => {
-              handleFormData({ subject: value });
-            }}
-          />
-          <InputTextArea
-            id="msg"
-            name="msg"
-            label="Message"
-            setForm={(value) => {
-              handleFormData({ msg: value });
-            }}
-          />
-          <HalfContainer style={{ marginTop: "10px" }}>
-            <BlueButton disabled type="submit" onClick={SendMsgLineApi}>
-              SEND
-            </BlueButton>
-            <TransButton disabled>CLEAR</TransButton>
-          </HalfContainer>
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+          >
+            <HalfContainer>
+              <div className="input-container">
+                <label className="text-white">Firstname *</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  className="input-form"
+                  required
+                />
+              </div>
+              <div className="input-container">
+                <label className="text-white">Lastname *</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  className="input-form"
+                  required
+                />
+              </div>
+            </HalfContainer>
+            <div className="input-container">
+              <label className="text-white">Email *</label>
+              <input
+                type="email"
+                name="email"
+                className="input-form"
+                required
+              />
+            </div>
+            <div className="input-container">
+              <label className="text-white">Subject *</label>
+              <input name="subject" className="input-form" required />
+            </div>
+            <div className="input-container">
+              <label className="text-white">Message *</label>
+              <textarea name="msg" className="input-form" required />
+            </div>
+            <HalfContainer style={{ marginTop: "10px" }}>
+              <BlueButton type="submit">Send</BlueButton>
+              <TransButton type="reset">CLEAR</TransButton>
+            </HalfContainer>
+          </form>
         </Right>
       </Card>
     </div>

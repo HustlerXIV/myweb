@@ -129,9 +129,10 @@ export const TransButton = styled.button`
   padding: 12px 22px;
   border: none;
   border-radius: 10px;
-  background-color: transparent;
-  border: 2px solid #fff;
+  background-color: #1b255a;
 
+  border: 2px solid #fff;
+  filter: drop-shadow(3px 3px 0px #f44336);
   color: #fff;
 
   &:hover {

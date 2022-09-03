@@ -25,7 +25,6 @@ export default function InputForm({
         name={name}
         onChange={handleOnChange}
         placeholder="Not available"
-        disabled
         error={error}
       />
       {error && <HelperText className="text-alertColor">Test</HelperText>}

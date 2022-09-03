@@ -418,3 +418,15 @@
     flex-direction: column;
   }
 }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-form {
+  padding: 10px;
+  border-radius: 5px;
+}
