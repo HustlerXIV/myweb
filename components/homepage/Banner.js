@@ -35,7 +35,7 @@ function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <PortButton>PORTFOLIO</PortButton>
+                <PortButton>PORTFOLIO (PDF)</PortButton>
               </a>
             </div>
           </div>

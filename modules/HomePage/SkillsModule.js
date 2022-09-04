@@ -105,6 +105,15 @@ const SkillsData = [
 
 const SoftSkill = [
   {
+    title: "Thai: Native",
+  },
+  {
+    title: "English: Professional",
+  },
+  {
+    title: "French: Limited Work",
+  },
+  {
     title: "Time management skills",
   },
   {

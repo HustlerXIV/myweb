@@ -50,13 +50,11 @@ const Container = styled.div`
   padding: 10px 20px;
 
   @media (max-width: 1024px) {
-    gap: 30px;
-    justify-content: space-between;
+    gap: 50px;
   }
 
   @media (max-width: 640px) {
-    column-gap: 50px;
-    justify-content: flex-start;
+    gap: 30px;
   }
 `;
 
