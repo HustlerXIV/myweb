@@ -24,6 +24,7 @@ body {
   background-color: #022f61;
   background-image: url("/on-planet-21-02.png");
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 
 .mt-10 {
