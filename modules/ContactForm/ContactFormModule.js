@@ -10,6 +10,7 @@ import { BlueButton, TransButton } from "@components/style";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
 import MyModal from "@components/modal";
+import Loading from "@components/Loading";
 
 const MyInfoData = [
   {
@@ -29,7 +30,7 @@ const MyInfoData = [
   },
 ];
 
-export default function ContactFormModule({ setShowModal }) {
+export default function ContactFormModule() {
   const resetFormData = {
     firstname: null,
     lastname: null,
@@ -38,6 +39,8 @@ export default function ContactFormModule({ setShowModal }) {
     msg: null,
   };
   const [formData, setFormData] = useState(resetFormData);
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const handleFormData = (value) => {
     setFormData({
       ...formData,
@@ -51,7 +54,7 @@ export default function ContactFormModule({ setShowModal }) {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         "service_b82ttf4",
@@ -61,6 +64,7 @@ export default function ContactFormModule({ setShowModal }) {
       )
       .then(
         () => {
+          setLoading(false);
           setShowModal(true);
           clearData();
         },
@@ -71,77 +75,81 @@ export default function ContactFormModule({ setShowModal }) {
   };
 
   return (
-    <div
-      data-aos="fade-up"
-      className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
-    >
-      <Card id="contact">
-        <Left>
-          <Title className="text-white">CONTACT ME</Title>
-          <CardInfo>
-            {MyInfoData.map((item, index) => (
-              <DescWithIcon
-                href={item.href}
-                key={index}
-                title={item.title}
-                icon={item.icon}
-                className="text-white"
-              />
-            ))}
-          </CardInfo>
-        </Left>
-        <Right>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            id="contact-data"
-            style={{ display: "flex", flexDirection: "column", gap: "10px" }}
-          >
-            <HalfContainer>
+    <>
+      {loading && <Loading title="Sending..." />}
+      <div
+        data-aos="fade-up"
+        className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
+      >
+        <Card id="contact">
+          <Left>
+            <Title className="text-white">CONTACT ME</Title>
+            <CardInfo>
+              {MyInfoData.map((item, index) => (
+                <DescWithIcon
+                  href={item.href}
+                  key={index}
+                  title={item.title}
+                  icon={item.icon}
+                  className="text-white"
+                />
+              ))}
+            </CardInfo>
+          </Left>
+          <Right>
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              id="contact-data"
+              style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+            >
+              <HalfContainer>
+                <div className="input-container">
+                  <label className="text-white">Firstname *</label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    className="input-form"
+                    required
+                  />
+                </div>
+                <div className="input-container">
+                  <label className="text-white">Lastname *</label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    className="input-form"
+                    required
+                  />
+                </div>
+              </HalfContainer>
               <div className="input-container">
-                <label className="text-white">Firstname *</label>
+                <label className="text-white">Email *</label>
                 <input
-                  type="text"
-                  name="firstname"
+                  type="email"
+                  name="email"
                   className="input-form"
                   required
                 />
               </div>
               <div className="input-container">
-                <label className="text-white">Lastname *</label>
-                <input
-                  type="text"
-                  name="lastname"
-                  className="input-form"
-                  required
-                />
+                <label className="text-white">Subject *</label>
+                <input name="subject" className="input-form" required />
               </div>
-            </HalfContainer>
-            <div className="input-container">
-              <label className="text-white">Email *</label>
-              <input
-                type="email"
-                name="email"
-                className="input-form"
-                required
-              />
-            </div>
-            <div className="input-container">
-              <label className="text-white">Subject *</label>
-              <input name="subject" className="input-form" required />
-            </div>
-            <div className="input-container">
-              <label className="text-white">Message *</label>
-              <textarea name="msg" className="input-form" required />
-            </div>
-            <HalfContainer style={{ marginTop: "10px" }}>
-              <BlueButton type="submit">Send</BlueButton>
-              <TransButton type="reset">CLEAR</TransButton>
-            </HalfContainer>
-          </form>
-        </Right>
-      </Card>
-    </div>
+              <div className="input-container">
+                <label className="text-white">Message *</label>
+                <textarea name="msg" className="input-form" required />
+              </div>
+              <HalfContainer style={{ marginTop: "10px" }}>
+                <BlueButton type="submit">Send</BlueButton>
+                <TransButton type="reset">CLEAR</TransButton>
+              </HalfContainer>
+            </form>
+          </Right>
+        </Card>
+      </div>
+      {showModal && <MyModal setOpenModal={setShowModal} />}
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Home() {
   const projectData = myProjectData.filter((i) => i.principal === true);
-  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <Head>
@@ -17,8 +17,7 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomaPageModule setShowModal={setShowModal} projectData={projectData} />
-      {showModal && <MyModal setOpenModal={setShowModal} />}
+      <HomaPageModule projectData={projectData} />
     </>
   );
 }
