@@ -73,6 +73,8 @@ export default function WebDevModule({ webData }) {
             renderOnZeroPageCount={null}
             containerClassName="pagination"
             previousClassName="pagination-link"
+            nextLinkClassName=""
+            previousLinkClassName=""
             nextClassName="pagination-link"
             activeClassName="pagination-active"
           />

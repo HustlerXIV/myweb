@@ -9,6 +9,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { BlueButton, TransButton } from "@components/style";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
+import MyModal from "@components/modal";
 
 const MyInfoData = [
   {
@@ -28,7 +29,7 @@ const MyInfoData = [
   },
 ];
 
-export default function ContactFormModule() {
+export default function ContactFormModule({ setShowModal }) {
   const resetFormData = {
     firstname: null,
     lastname: null,
@@ -45,7 +46,9 @@ export default function ContactFormModule() {
   };
 
   const form = useRef();
-
+  const clearData = () => {
+    document.getElementById("contact-data").reset();
+  };
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -57,20 +60,22 @@ export default function ContactFormModule() {
         "fK3ajTjAX9N9_lRLl"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setShowModal(true);
+          clearData();
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <div
       data-aos="fade-up"
       className="container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8"
     >
-      <Card>
+      <Card id="contact">
         <Left>
           <Title className="text-white">CONTACT ME</Title>
           <CardInfo>
@@ -89,6 +94,7 @@ export default function ContactFormModule() {
           <form
             ref={form}
             onSubmit={sendEmail}
+            id="contact-data"
             style={{ display: "flex", flexDirection: "column", gap: "10px" }}
           >
             <HalfContainer>
@@ -160,10 +166,14 @@ const Card = styled.div`
     padding: 30px;
   }
 
+  @media (max-width: 720px) {
+    background-image: none;
+    flex-direction: column;
+  }
+
   @media (max-width: 576px) {
     padding: 20px;
     flex-direction: column;
-    background-image: none;
   }
 `;
 
@@ -184,7 +194,7 @@ const Right = styled.div`
   display: flex;
   gap: 10px;
   flex-direction: column;
-  @media (max-width: 576px) {
+  @media (max-width: 720px) {
     width: 100%;
   }
 `;
@@ -196,7 +206,7 @@ const HalfContainer = styled.div`
   @media (max-width: 900px) {
     flex-direction: ${(p) => p.column};
   }
-  @media (max-width: 576px) {
+  @media (max-width: 900px) {
     flex-direction: column;
   }
 `;

@@ -76,7 +76,7 @@ const inset = keyframes`
             box-shadow: inset 0 0 0 0 rgba(238, 82, 83, 0);
   }
   100% {
-    -webkit-box-shadow: inset 0 0 14px 0px #fff;
-            box-shadow: inset 0 0 14px 0px  #fff;
+    -webkit-box-shadow: inset 0 0 14px 0px #0078ae;
+            box-shadow: inset 0 0 14px 0px  #0078ae;
   }
 `;

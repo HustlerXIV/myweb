@@ -5,7 +5,7 @@ import ContactFormModule from "../ContactForm/ContactFormModule";
 import MyPortModule from "../MyPort/MyPortModule";
 import SkillsModule from "./SkillsModule";
 
-export default function HomaPageModule({ projectData }) {
+export default function HomaPageModule({ projectData, setShowModal }) {
   return (
     <>
       <Banner />
@@ -13,7 +13,7 @@ export default function HomaPageModule({ projectData }) {
         <AboutMeModule />
         <SkillsModule />
         <MyPortModule projectData={projectData} />
-        <ContactFormModule />
+        <ContactFormModule setShowModal={setShowModal} />
       </div>
     </>
   );

@@ -153,7 +153,7 @@ const AbsoluteDiv = styled.div`
   position: absolute;
   bottom: -10%;
   left: -10%;
-  z-index: 100;
+  z-index: 0;
 
   @media (max-width: 580px) {
     display: none;

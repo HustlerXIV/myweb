@@ -4,6 +4,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import { BlueButton, LetsConnectButton, NavButton } from "./style";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -53,7 +54,10 @@ export default function Navbar() {
                         </a>
                       );
                     })}
-                    <LetsConnectButton>{`LET'S CONNECT`}</LetsConnectButton>
+
+                    <Link href="/#contact">
+                      <LetsConnectButton>{`LET'S CONNECT`}</LetsConnectButton>
+                    </Link>
                   </div>
                 </div>
               </div>
