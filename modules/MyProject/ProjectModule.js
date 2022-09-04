@@ -37,7 +37,7 @@ export default function ProjectModule({ data }) {
         <Card>
           <HeadContainer>
             <div>
-              <SubTopic weight="normal" fs="25px">
+              <SubTopic style={{ color: "#D38BDC" }} weight="normal" fs="20px">
                 {type}
               </SubTopic>
               <Topic fs="40px">{title}</Topic>
