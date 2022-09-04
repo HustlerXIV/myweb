@@ -34,7 +34,7 @@ export default function ShowSkills({
         <ListContainer>
           {skillList.map((item, index) => (
             <SkillList key={index}>
-              <FcNext />
+              {!isSkill && <FcNext />}
               {item.title}
             </SkillList>
           ))}
