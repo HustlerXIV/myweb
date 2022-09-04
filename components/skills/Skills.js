@@ -53,6 +53,11 @@ const Container = styled.div`
     gap: 30px;
     justify-content: space-between;
   }
+
+  @media (max-width: 640px) {
+    column-gap: 50px;
+    justify-content: flex-start;
+  }
 `;
 
 const SkillsCard = styled.div`
