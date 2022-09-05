@@ -56,6 +56,7 @@ const SkillList = styled.div`
   gap: 5px;
   align-items: center;
   color: #fff;
+  margin: 10px 0px;
 `;
 
 const BannerCard = styled.div`
