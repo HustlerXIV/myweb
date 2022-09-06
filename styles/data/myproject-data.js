@@ -696,6 +696,46 @@ export const myProjectData = [
     ],
   },
   {
+    id: 18,
+    title: "Chat App",
+    type: "Learning Project",
+    desc: "",
+    img: "/port/chatapp.png",
+    slug: "chat-app",
+    link: "/my-projects/chat-app",
+    principal: true,
+    demo: "https://napat-chat.vercel.app/",
+    isPort: true,
+    utilities: [
+      {
+        mainTitle: "Web Development",
+        icon: <MdWeb />,
+        data: [
+          {
+            logo: "/hardskills/html.png",
+            title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/js.svg.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/react.png",
+            title: "ReactJs",
+          },
+          {
+            logo: "/hardskills/firebase.jpeg",
+            title: "Firebase",
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: 100,
     title: "The Fundamental of Digital Marketing",
     type: "Certificate",
