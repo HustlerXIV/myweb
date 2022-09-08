@@ -81,6 +81,14 @@ const SkillsData = [
         logo: "/hardskills/cypress.png",
         title: "CyPress",
       },
+      {
+        logo: "/hardskills/python.png",
+        title: "Python",
+      },
+      {
+        logo: "/hardskills/java.jpeg",
+        title: "Java",
+      },
     ],
   },
   {

@@ -82,4 +82,8 @@ const SkillsTextBox = styled.div`
   text-align: center;
   font-size: 13px;
   font-weight: bold;
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+  }
 `;
