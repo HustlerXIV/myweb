@@ -5,6 +5,9 @@ import "../styles/globals.css";
 import "../styles/style.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-FNH90DK17T";
+ReactGA.initialize(TRACKING_ID);
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
