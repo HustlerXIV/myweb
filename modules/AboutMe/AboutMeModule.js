@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import {
   Desc,
-  DivCenter,
   DivWidth,
   ResponsiveImage,
   SubTopic,
@@ -14,7 +13,6 @@ import { MdMilitaryTech } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import DescWithIcon from "@components/Form/DescWithIcon";
 import { FcNext, FcPrevious } from "react-icons/fc";
-import { BsSlashLg } from "react-icons/bs";
 
 const MyInfoData = [
   {
