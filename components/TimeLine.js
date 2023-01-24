@@ -27,13 +27,13 @@ const experiences = [
   {
     name: "Web Developer (Volunteer)",
     year: "Oct 2020-NOW",
-    total: "2 Years 2 Months",
+    total: "2 Years 5 Months",
     company: "Soilfish Co.,Ltd.",
   },
   {
     name: "Software Developer",
     year: "Dec 2021-NOW",
-    total: "1 Year",
+    total: "1 Year 3 Months",
     company: "Soilfish Co.,Ltd.",
   },
 ];
