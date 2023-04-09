@@ -16,11 +16,11 @@ import { FcNext, FcPrevious } from "react-icons/fc";
 
 const MyInfoData = [
   {
-    title: "10 April 1998 (24 years old)",
+    title: "10 April 1998 (25 years old)",
     icon: <BiCake />,
   },
   {
-    title: "Bangkok, Thailand",
+    title: "Hokkaido, Japan",
     icon: <HiOutlineLocationMarker />,
   },
   {

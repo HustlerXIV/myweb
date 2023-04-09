@@ -9,35 +9,42 @@ const experiences = [
     year: "Jan - Mar 2020",
     total: "3 Months",
     company: "InterSite (Thailand) Co.,Ltd.",
-    finisied: true,
+    finished: true,
   },
   {
     name: "Web Developer & Graphic Designer",
     year: "2019-2020",
     total: "1 Year",
     company: "Self employed",
-    finisied: true,
+    finished: true,
   },
   {
     name: "Communication Coordinator",
     year: "Oct 2020-2021",
     total: "1 Year 2 Months",
     company: "Franco-Thai Chamber of Commerce",
-    finisied: true,
+    finished: true,
   },
   {
     name: "Web Developer (Volunteer)",
-    year: "Oct 2020-NOW",
-    total: "2 Years 5 Months",
-    company: "Soilfish Co.,Ltd.",
-    finisied: false,
+    year: "Oct 2020 - Feb 2023",
+    total: "2 Years 6 Months",
+    company: "Scripture Union Thailand",
+    finished: true,
   },
   {
     name: "Software Developer",
-    year: "Dec 2021-NOW",
-    total: "1 Year 3 Months",
+    year: "Dec 2021 - Feb 2023",
+    total: "1 Year 4 Months",
     company: "Soilfish Co.,Ltd.",
-    finisied: false,
+    finished: true,
+  },
+  {
+    name: "Software Developer",
+    year: "Mar 2023 - NOW",
+    total: "2 Months",
+    company: "Hokkaido Tourism Management",
+    finished: false,
   },
 ];
 
@@ -52,7 +59,7 @@ function TimeLine() {
             >{`${item.year} at ${item.company} (${item.total})`}</Desc>
             <TextContainer>
               <Text>{item.name}</Text>
-              {!item.finisied && (
+              {!item.finished && (
                 <>
                   <FcPrevious />
                   <Text>NOW</Text>

@@ -14,9 +14,9 @@ import Loading from "@components/Loading";
 
 const MyInfoData = [
   {
-    title: "(+66) 63-198-7380",
+    title: "(+81) 7044-5-07044",
     icon: <BsTelephoneForward />,
-    href: "tel:063-198-7380",
+    href: "tel:07044507044",
   },
   {
     title: "napat.jaiyim@hotmail.com",

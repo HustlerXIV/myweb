@@ -13,7 +13,7 @@ function Banner() {
           <div>
             <div className="flex items-center	gap-1 text-xl mb-3 text-white drop-shadow-lg sm:text-2xl lg:text-xl">
               <FcPrevious />
-              OPEN TO WORK
+              NOT OPEN TO WORK
               <FcNext />
             </div>
             <div className="text-4xl  my-5 text-white drop-shadow-lg sm:text-6xl">
@@ -28,7 +28,7 @@ function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ResumeButton>RESUME (PDF)</ResumeButton>
+                <ResumeButton disabled>RESUME (PDF)</ResumeButton>
               </a>
               <a
                 href="https://drive.google.com/file/d/1tZrdlxQAT60c_F850_wWELUHVjutwdN1/view?usp=sharing"
