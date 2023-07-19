@@ -42,7 +42,7 @@ const experiences = [
   {
     name: "Software Developer",
     year: "Mar 2023 - NOW",
-    total: "2 Months",
+    total: "6 Months",
     company: "Hokkaido Tourism Management",
     finished: false,
   },

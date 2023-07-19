@@ -13,7 +13,7 @@ function Banner() {
           <div>
             <div className="flex items-center	gap-1 text-xl mb-3 text-white drop-shadow-lg sm:text-2xl lg:text-xl">
               <FcPrevious />
-              NOT OPEN TO WORK
+              OPEN TO WORK
               <FcNext />
             </div>
             <div className="text-4xl  my-5 text-white drop-shadow-lg sm:text-6xl">
@@ -24,11 +24,11 @@ function Banner() {
             </div>
             <div className="flex justify-between sm:justify-start mt-5 gap-5">
               <a
-                href="https://drive.google.com/file/d/1fthLkrVWtde99Fo_CBYdQmH1i-KFJbz1/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YExNSvFmQQFQUWZiWAJls-z0AZdUf6xn/view"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ResumeButton disabled>RESUME (PDF)</ResumeButton>
+                <ResumeButton>RESUME (PDF)</ResumeButton>
               </a>
               <a
                 href="https://drive.google.com/file/d/1tZrdlxQAT60c_F850_wWELUHVjutwdN1/view?usp=sharing"
