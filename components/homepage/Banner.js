@@ -22,7 +22,7 @@ function Banner() {
             <div className="text-xl my-4 text-white drop-shadow-lg sm:text-2xl">
               SOFTWARE DEVELOPER
             </div>
-            <div className="flex justify-between sm:justify-start mt-5 gap-5">
+            <div className="flex sm:justify-start mt-5 gap-5">
               <a
                 href="https://drive.google.com/file/d/1YExNSvFmQQFQUWZiWAJls-z0AZdUf6xn/view"
                 target="_blank"
@@ -31,11 +31,11 @@ function Banner() {
                 <ResumeButton>RESUME (PDF)</ResumeButton>
               </a>
               <a
-                href="https://drive.google.com/file/d/1tZrdlxQAT60c_F850_wWELUHVjutwdN1/view?usp=sharing"
+                href="https://github.com/HustlerXIV"
                 target="_blank"
                 rel="noreferrer"
               >
-                <PortButton>PORTFOLIO (PDF)</PortButton>
+                <PortButton>Github</PortButton>
               </a>
             </div>
           </div>
