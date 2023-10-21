@@ -16,9 +16,7 @@ export default function ShowSkills({
     <BannerCard
       open={open}
       sectionFlex={sectionFlex}
-      className="shadow-inner drop-shadow-lg
-
-"
+      className="shadow-inner drop-shadow-lg"
     >
       <DetailContainer>
         <Title>{headTitle}</Title>

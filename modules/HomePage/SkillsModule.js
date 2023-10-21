@@ -46,8 +46,12 @@ const SkillsData = [
         title: "CSS",
       },
       {
-        logo: "/hardskills/js.svg.png",
+        logo: "/hardskills/JavaScript.png",
         title: "JavaScript",
+      },
+      {
+        logo: "/hardskills/typescript.png",
+        title: "TypeScript",
       },
       {
         logo: "/hardskills/php.png",
@@ -104,8 +108,8 @@ const SkillsData = [
         title: "Illustrator",
       },
       {
-        logo: "/hardskills/ae.png",
-        title: "After Effect",
+        logo: "/hardskills/figma.png",
+        title: "Figma",
       },
     ],
   },
