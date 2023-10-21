@@ -24,7 +24,7 @@ function Banner() {
             </div>
             <div className="flex sm:justify-start mt-5 gap-5">
               <a
-                href="https://drive.google.com/file/d/1YExNSvFmQQFQUWZiWAJls-z0AZdUf6xn/view"
+                href="https://drive.google.com/file/d/1fthLkrVWtde99Fo_CBYdQmH1i-KFJbz1/view"
                 target="_blank"
                 rel="noreferrer"
               >
