@@ -39,7 +39,7 @@ const experiences = [
   },
   {
     name: "Graphic Designer (Internship)",
-    year: "Jan - Mar 2020",
+    year: "Jan - Apr 2020",
     startDate: "2020-01-01",
     endDate: "2020-04-01",
     company: "InterSite (Thailand) Co.,Ltd.",
