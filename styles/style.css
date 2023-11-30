@@ -32,7 +32,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 20px;
   height: 400px;
   border-radius: calc(var(--curve) * 1px);
 }

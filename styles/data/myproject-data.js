@@ -6,7 +6,7 @@ export const myProjectData = [
     title: "True IDC Cloud",
     type: "Professional Work",
     desc: "",
-    img: "/port/tidc2.png",
+    img: "/newport/tidc.png",
     slug: "true-idc-cloud",
     link: "/my-projects/true-idc-cloud",
     principal: true,
@@ -26,7 +26,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -62,7 +62,7 @@ export const myProjectData = [
     title: "PASONA THAILAND",
     type: "Professional Work",
     desc: "",
-    img: "/port/pasona.png",
+    img: "/newport/pasona.png",
     slug: "pasona-th",
     link: "/my-projects/pasona-th",
     principal: true,
@@ -82,7 +82,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -102,7 +102,7 @@ export const myProjectData = [
     title: "Deepscope",
     type: "Professional Work",
     desc: "",
-    img: "/port/deep.png",
+    img: "/newport/deep.png",
     slug: "deepscope",
     link: "/my-projects/deepscope",
     principal: true,
@@ -122,7 +122,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
         ],
@@ -134,7 +134,7 @@ export const myProjectData = [
     title: "Scripture Union Thailand",
     type: "Professional Work",
     desc: "",
-    img: "/port/su.png",
+    img: "/newport/su.png",
     slug: "su-thailand",
     link: "/my-projects/su-thailand",
     principal: true,
@@ -154,7 +154,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -174,7 +174,7 @@ export const myProjectData = [
     title: "True IDC Cloud (CMS)",
     type: "Professional Work",
     desc: "",
-    img: "/port/tidc-cms.png",
+    img: "/newport/tidccms.png",
     slug: "true-idc-cloud-cms",
     link: "/my-projects/true-idc-cloud-cms",
     principal: false,
@@ -194,7 +194,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -226,7 +226,7 @@ export const myProjectData = [
     title: "MY WEALTH",
     type: "Professional Work",
     desc: "",
-    img: "/port/mywealth.png",
+    img: "/newport/mywealth.png",
     slug: "my-welath",
     link: "/my-projects/my-welath",
     principal: false,
@@ -246,7 +246,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
 
@@ -275,7 +275,7 @@ export const myProjectData = [
     title: "AMS (CMS)",
     type: "Professional Work",
     desc: "",
-    img: "/port/ams.png",
+    img: "/newport/axaktx.png",
     slug: "ams-cms",
     link: "/my-projects/ams-cms",
     principal: false,
@@ -295,7 +295,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -315,7 +315,7 @@ export const myProjectData = [
     title: "Le français pour l'avenir",
     type: "Professional Work",
     desc: "",
-    img: "/port/lfp.png",
+    img: "/newport/rsu.png",
     slug: "le-francais-pour-lavenir",
     link: "/my-projects/le-francais-pour-lavenir",
     principal: false,
@@ -335,7 +335,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -355,7 +355,7 @@ export const myProjectData = [
     title: "CNFP + AUF",
     type: "Professional Work",
     desc: "",
-    img: "/port/cnfp.png",
+    img: "/newport/cnfp.png",
     slug: "cnfp-auf",
     link: "/my-projects/cnfp-auf",
     principal: false,
@@ -375,7 +375,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -395,7 +395,7 @@ export const myProjectData = [
     title: "Zapper (Thailand)",
     type: "Professional Work",
     desc: "",
-    img: "/port/zapper.png",
+    img: "/newport/zapper.png",
     slug: "zapper",
     link: "/my-projects/zapper",
     principal: false,
@@ -415,7 +415,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -439,7 +439,7 @@ export const myProjectData = [
     title: "My Port V1",
     type: "Learning Project",
     desc: "",
-    img: "/port/p6.png",
+    img: "/newport/oldport.png",
     slug: "my-port-v1",
     link: "/my-projects/my-port-v1",
     principal: false,
@@ -459,7 +459,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -475,7 +475,7 @@ export const myProjectData = [
     title: "E-COMMERCE",
     type: "Learning Project",
     desc: "",
-    img: "/port/p7.png",
+    img: "/newport/shopping.png",
     slug: "e-commerce",
     link: "/my-projects/e-commerce",
     principal: false,
@@ -495,7 +495,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -515,7 +515,7 @@ export const myProjectData = [
     title: "To do list",
     type: "Learning Project",
     desc: "",
-    img: "/port/p1.png",
+    img: "/newport/todolist.png",
     slug: "to-do-list",
     link: "/my-projects/to-do-list",
     principal: false,
@@ -535,7 +535,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -551,7 +551,7 @@ export const myProjectData = [
     title: "TIC-TAC-TOE",
     type: "Learning Project",
     desc: "",
-    img: "/port/p5.png",
+    img: "/newport/tictactoe.png",
     slug: "tic-tac-toe",
     link: "/my-projects/tic-tac-toe",
     principal: false,
@@ -571,7 +571,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -587,7 +587,7 @@ export const myProjectData = [
     title: "Countdown Timer",
     type: "Learning Project",
     desc: "",
-    img: "/port/p3.png",
+    img: "/newport/time.png",
     slug: "countdown-timer",
     link: "/my-projects/countdown-timer",
     principal: false,
@@ -607,7 +607,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
         ],
@@ -619,7 +619,7 @@ export const myProjectData = [
     title: "Quiz App",
     type: "Learning Project",
     desc: "",
-    img: "/port/p4.png",
+    img: "/newport/question.png",
     slug: "quiz-app",
     link: "/my-projects/quiz-app",
     principal: false,
@@ -639,7 +639,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -655,7 +655,7 @@ export const myProjectData = [
     title: "My Portfolio V2",
     type: "Learning Project",
     desc: "",
-    img: "/port/myy.png",
+    img: "/newport/myport.png",
     slug: "my-port-2",
     link: "/my-projects/my-port-2",
     principal: true,
@@ -675,7 +675,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
 
@@ -700,7 +700,7 @@ export const myProjectData = [
     title: "Chat App",
     type: "Learning Project",
     desc: "",
-    img: "/port/chatapp.png",
+    img: "/newport/chatapp.png",
     slug: "chat-app",
     link: "/my-projects/chat-app",
     principal: true,
@@ -720,7 +720,7 @@ export const myProjectData = [
             title: "CSS",
           },
           {
-            logo: "/hardskills/js.svg.png",
+            logo: "/hardskills/JavaScript.png",
             title: "JavaScript",
           },
           {
@@ -730,6 +730,42 @@ export const myProjectData = [
           {
             logo: "/hardskills/firebase.jpeg",
             title: "Firebase",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 19,
+    title: "Portfolio Website",
+    type: "Learning Project",
+    desc: "",
+    img: "/newport/kwan.png",
+    slug: "thananya-port",
+    link: "/my-projects/chat-app",
+    principal: true,
+    demo: "https://thananya-julamun.vercel.app/",
+    isPort: true,
+    utilities: [
+      {
+        mainTitle: "Web Development",
+        icon: <MdWeb />,
+        data: [
+          {
+            logo: "/hardskills/html.png",
+            title: "HTML",
+          },
+          {
+            logo: "/hardskills/css.jpeg",
+            title: "CSS",
+          },
+          {
+            logo: "/hardskills/JavaScript.png",
+            title: "JavaScript",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
           },
         ],
       },
