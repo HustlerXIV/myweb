@@ -13,7 +13,7 @@ export default function Home() {
         <title>Napat Jaiyim</title>
         <meta
           name="description"
-          content="There are my information, my projects and my skills"
+          content="Discover more about me, explore my portfolio, and don't hesitate to reach out."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
