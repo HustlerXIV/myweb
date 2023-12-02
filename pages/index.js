@@ -1,8 +1,6 @@
 import Head from "next/head";
 import HomaPageModule from "@modules/HomePage/HomaPageModule";
 import { myProjectData } from "../styles/data/myproject-data";
-import MyModal from "@components/modal";
-import { useState } from "react";
 
 export default function Home() {
   const projectData = myProjectData.filter((i) => i.principal === true);
