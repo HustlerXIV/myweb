@@ -92,10 +92,19 @@ function AboutMeModule() {
             >
               MY EDUCATION
             </SubTopic>
+            <Desc margin="0 0 16px 0">
+              {`Master's degree`}
+              <br />
+              in M.Sc Software Engineering
+              <br />
+              Southeast Asia University
+              <br />
+              Expected Graduation: 2025
+            </Desc>
             <Desc>
               {`Bachelor's degree`}
               <br />
-              Major FRENCH <br /> Minor International Relations
+              in FRENCH
               <br />
               Faculty of Liberal Arts, Rangsit University, Pathumthani
               (Thailand) 2016 - 2020 (GPA - 3.37 Second class honors)
