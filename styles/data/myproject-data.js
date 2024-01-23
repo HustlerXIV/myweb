@@ -1,134 +1,134 @@
 import { MdWeb } from "react-icons/md";
 
 export const myProjectData = [
-  {
-    id: 1,
-    title: "True IDC Cloud",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/tidc.png",
-    slug: "true-idc-cloud",
-    link: "/my-projects/true-idc-cloud",
-    principal: true,
-    demo: "https://cloud.trueidc.com/",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
-          {
-            logo: "/hardskills/mysql.png",
-            title: "MySQL",
-          },
-          {
-            logo: "/hardskills/react.png",
-            title: "ReactJs",
-          },
-          {
-            logo: "/hardskills/nextjs.png",
-            title: "NextJs",
-          },
-          {
-            logo: "/hardskills/nestjs.png",
-            title: "NestJs",
-          },
-          {
-            logo: "/hardskills/docker.png",
-            title: "Docker",
-          },
-          {
-            logo: "/hardskills/cypress.png",
-            title: "CyPress",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "PASONA THAILAND",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/pasona.png",
-    slug: "pasona-th",
-    link: "/my-projects/pasona-th",
-    principal: true,
-    demo: "https://pasona.co.th/",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
-          {
-            logo: "/hardskills/php.png",
-            title: "PHP",
-          },
-          {
-            logo: "/hardskills/wordpress.png",
-            title: "WordPress",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Deepscope",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/deep.png",
-    slug: "deepscope",
-    link: "/my-projects/deepscope",
-    principal: true,
-    demo: "",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: "True IDC Cloud",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/tidc.png",
+  //   slug: "true-idc-cloud",
+  //   link: "/my-projects/true-idc-cloud",
+  //   principal: true,
+  //   demo: "https://cloud.trueidc.com/",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
+  //         {
+  //           logo: "/hardskills/mysql.png",
+  //           title: "MySQL",
+  //         },
+  //         {
+  //           logo: "/hardskills/react.png",
+  //           title: "ReactJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nextjs.png",
+  //           title: "NextJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nestjs.png",
+  //           title: "NestJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/docker.png",
+  //           title: "Docker",
+  //         },
+  //         {
+  //           logo: "/hardskills/cypress.png",
+  //           title: "CyPress",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   title: "PASONA THAILAND",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/pasona.png",
+  //   slug: "pasona-th",
+  //   link: "/my-projects/pasona-th",
+  //   principal: true,
+  //   demo: "https://pasona.co.th/",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
+  //         {
+  //           logo: "/hardskills/php.png",
+  //           title: "PHP",
+  //         },
+  //         {
+  //           logo: "/hardskills/wordpress.png",
+  //           title: "WordPress",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   title: "Deepscope",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/deep.png",
+  //   slug: "deepscope",
+  //   link: "/my-projects/deepscope",
+  //   principal: true,
+  //   demo: "",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: 4,
     title: "Scripture Union Thailand",
@@ -169,147 +169,147 @@ export const myProjectData = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "True IDC Cloud (CMS)",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/tidccms.png",
-    slug: "true-idc-cloud-cms",
-    link: "/my-projects/true-idc-cloud-cms",
-    principal: false,
-    demo: "",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
-          {
-            logo: "/hardskills/mysql.png",
-            title: "MySQL",
-          },
-          {
-            logo: "/hardskills/react.png",
-            title: "ReactJs",
-          },
-          {
-            logo: "/hardskills/nextjs.png",
-            title: "NextJs",
-          },
-          {
-            logo: "/hardskills/nestjs.png",
-            title: "NestJs",
-          },
-          {
-            logo: "/hardskills/docker.png",
-            title: "Docker",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "MY WEALTH",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/mywealth.png",
-    slug: "my-welath",
-    link: "/my-projects/my-welath",
-    principal: false,
-    demo: "",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
+  // {
+  //   id: 5,
+  //   title: "True IDC Cloud (CMS)",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/tidccms.png",
+  //   slug: "true-idc-cloud-cms",
+  //   link: "/my-projects/true-idc-cloud-cms",
+  //   principal: false,
+  //   demo: "",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
+  //         {
+  //           logo: "/hardskills/mysql.png",
+  //           title: "MySQL",
+  //         },
+  //         {
+  //           logo: "/hardskills/react.png",
+  //           title: "ReactJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nextjs.png",
+  //           title: "NextJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nestjs.png",
+  //           title: "NestJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/docker.png",
+  //           title: "Docker",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   title: "MY WEALTH",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/mywealth.png",
+  //   slug: "my-welath",
+  //   link: "/my-projects/my-welath",
+  //   principal: false,
+  //   demo: "",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
 
-          {
-            logo: "/hardskills/react.png",
-            title: "ReactJs",
-          },
-          {
-            logo: "/hardskills/nextjs.png",
-            title: "NextJs",
-          },
-          {
-            logo: "/hardskills/kotlin.jpeg",
-            title: "Kotlin",
-          },
-          {
-            logo: "/hardskills/docker.png",
-            title: "Docker",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "AMS (CMS)",
-    type: "Professional Work",
-    desc: "",
-    img: "/newport/axaktx.png",
-    slug: "ams-cms",
-    link: "/my-projects/ams-cms",
-    principal: false,
-    demo: "",
-    isPort: true,
-    utilities: [
-      {
-        mainTitle: "Web Development",
-        icon: <MdWeb />,
-        data: [
-          {
-            logo: "/hardskills/html.png",
-            title: "HTML",
-          },
-          {
-            logo: "/hardskills/css.jpeg",
-            title: "CSS",
-          },
-          {
-            logo: "/hardskills/JavaScript.png",
-            title: "JavaScript",
-          },
-          {
-            logo: "/hardskills/react.png",
-            title: "ReactJs",
-          },
-          {
-            logo: "/hardskills/nextjs.png",
-            title: "NextJs",
-          },
-        ],
-      },
-    ],
-  },
+  //         {
+  //           logo: "/hardskills/react.png",
+  //           title: "ReactJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nextjs.png",
+  //           title: "NextJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/kotlin.jpeg",
+  //           title: "Kotlin",
+  //         },
+  //         {
+  //           logo: "/hardskills/docker.png",
+  //           title: "Docker",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   title: "AMS (CMS)",
+  //   type: "Professional Work",
+  //   desc: "",
+  //   img: "/newport/axaktx.png",
+  //   slug: "ams-cms",
+  //   link: "/my-projects/ams-cms",
+  //   principal: false,
+  //   demo: "",
+  //   isPort: true,
+  //   utilities: [
+  //     {
+  //       mainTitle: "Web Development",
+  //       icon: <MdWeb />,
+  //       data: [
+  //         {
+  //           logo: "/hardskills/html.png",
+  //           title: "HTML",
+  //         },
+  //         {
+  //           logo: "/hardskills/css.jpeg",
+  //           title: "CSS",
+  //         },
+  //         {
+  //           logo: "/hardskills/JavaScript.png",
+  //           title: "JavaScript",
+  //         },
+  //         {
+  //           logo: "/hardskills/react.png",
+  //           title: "ReactJs",
+  //         },
+  //         {
+  //           logo: "/hardskills/nextjs.png",
+  //           title: "NextJs",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: 8,
     title: "Le français pour l'avenir",
