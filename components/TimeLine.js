@@ -7,11 +7,19 @@ import { dateDifference, getCurrentDate } from "@utils/date";
 const experiences = [
   {
     name: "Software Developer",
-    year: "Mar 2023 - NOW",
-    startDate: "2023-03-01",
+    year: "Mar 2024 - NOW",
+    startDate: "2024-03-15",
     endDate: getCurrentDate(),
-    company: "Hokkaido Tourism Management",
+    company: "Coforge",
     finished: false,
+  },
+  {
+    name: "Software Developer",
+    year: "Mar 2023 - Mar 2024",
+    startDate: "2023-03-01",
+    endDate: "2024-03-01",
+    company: "Hokkaido Tourism Management",
+    finished: true,
   },
   {
     name: "Software Developer",
