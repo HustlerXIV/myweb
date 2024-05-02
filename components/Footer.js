@@ -7,11 +7,11 @@ export default function Footer() {
         <span className="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2022
           <a
-            href="https://www.linkedin.com/in/napat-jaiyim-538249195/"
+            href="https://www.linkedin.com/in/napat-theeranitichai-538249195/"
             className="hover:underline"
             style={{ margin: "0px 10px" }}
           >
-            Napat Jaiyim
+            Napat Theeranitichai
           </a>
           All Rights Reserved.
         </span>

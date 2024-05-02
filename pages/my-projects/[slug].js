@@ -11,7 +11,7 @@ export default function Project() {
   return (
     <>
       <Head>
-        <title>Napat Jaiyim</title>
+        <title>Napat Theeranitichai</title>
         <meta name="description" content="Here are my projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

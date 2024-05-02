@@ -19,14 +19,14 @@ const MyInfoData = [
     href: "tel:0811184944",
   },
   {
-    title: "napat.jaiyim@hotmail.com",
+    title: "napat.theeranitichai@gmail.com",
     icon: <HiOutlineMail />,
-    href: "mailto:napat.jaiyim@hotmail.com",
+    href: "mailto:napat.theeranitichai@gmail.com",
   },
   {
-    title: "Napat Jaiyim",
+    title: "LinkedIn",
     icon: <AiOutlineLinkedin />,
-    href: "https://www.linkedin.com/in/napat-jaiyim-538249195/",
+    href: "https://www.linkedin.com/in/napat-theeranitichai-538249195/",
   },
 ];
 

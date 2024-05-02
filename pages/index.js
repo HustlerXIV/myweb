@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Napat Jaiyim</title>
+        <title>Napat Theeranitichai</title>
         <meta
           name="description"
           content="Discover more about me, explore my portfolio, and don't hesitate to reach out."

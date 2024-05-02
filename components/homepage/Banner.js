@@ -17,7 +17,7 @@ function Banner() {
               <FcNext />
             </div>
             <div className="text-4xl  my-5 text-white drop-shadow-lg sm:text-6xl">
-              Hello, I am Napat Jaiyim
+              Hello, I am Napat
             </div>
             <div className="text-xl my-4 text-white drop-shadow-lg sm:text-2xl">
               SOFTWARE DEVELOPER
