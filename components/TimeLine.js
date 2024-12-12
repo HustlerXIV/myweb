@@ -6,12 +6,20 @@ import { dateDifference, getCurrentDate } from "@utils/date";
 
 const experiences = [
   {
-    name: "Software Developer",
-    year: "Mar 2024 - NOW",
+    name: "Specialist Software Developer",
+    year: "Nov 2024 - NOW",
     startDate: "2024-03-15",
     endDate: getCurrentDate(),
-    company: "Coforge",
+    company: "Thanachart Insurance",
     finished: false,
+  },
+  {
+    name: "Senior Software Developer",
+    year: "Mar 2024 - Nov 2024",
+    startDate: "2024-03-15",
+    endDate: "2024-11-01",
+    company: "Coforge",
+    finished: true,
   },
   {
     name: "Software Developer",
