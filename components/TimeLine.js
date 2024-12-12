@@ -8,7 +8,7 @@ const experiences = [
   {
     name: "Specialist Software Developer",
     year: "Nov 2024 - NOW",
-    startDate: "2024-03-15",
+    startDate: "2024-11-15",
     endDate: getCurrentDate(),
     company: "Thanachart Insurance",
     finished: false,
