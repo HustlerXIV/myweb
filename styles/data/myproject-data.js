@@ -1,62 +1,46 @@
 import { MdWeb } from "react-icons/md";
 
 export const myProjectData = [
-  // {
-  //   id: 1,
-  //   title: "True IDC Cloud",
-  //   type: "Professional Work",
-  //   desc: "",
-  //   img: "/newport/tidc.png",
-  //   slug: "true-idc-cloud",
-  //   link: "/my-projects/true-idc-cloud",
-  //   principal: true,
-  //   demo: "https://cloud.trueidc.com/",
-  //   isPort: true,
-  //   utilities: [
-  //     {
-  //       mainTitle: "Web Development",
-  //       icon: <MdWeb />,
-  //       data: [
-  //         {
-  //           logo: "/hardskills/html.png",
-  //           title: "HTML",
-  //         },
-  //         {
-  //           logo: "/hardskills/css.jpeg",
-  //           title: "CSS",
-  //         },
-  //         {
-  //           logo: "/hardskills/JavaScript.png",
-  //           title: "JavaScript",
-  //         },
-  //         {
-  //           logo: "/hardskills/mysql.png",
-  //           title: "MySQL",
-  //         },
-  //         {
-  //           logo: "/hardskills/react.png",
-  //           title: "ReactJs",
-  //         },
-  //         {
-  //           logo: "/hardskills/nextjs.png",
-  //           title: "NextJs",
-  //         },
-  //         {
-  //           logo: "/hardskills/nestjs.png",
-  //           title: "NestJs",
-  //         },
-  //         {
-  //           logo: "/hardskills/docker.png",
-  //           title: "Docker",
-  //         },
-  //         {
-  //           logo: "/hardskills/cypress.png",
-  //           title: "CyPress",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    id: 1,
+    title: "Song Loma",
+    type: "Independent Research",
+    desc: "An independent research project focused on designing and prototyping a web-based solution, covering requirement analysis, system design, UX/UI prototyping, and technical feasibility exploration.",
+    img: "/newport/song-loma.png",
+    slug: "song-loma",
+    link: "/my-projects/song-loma",
+    principal: true,
+    demo: "https://song-loma.com/",
+    isPort: true,
+    utilities: [
+      {
+        mainTitle: "Web Development",
+        icon: <MdWeb />,
+        data: [
+          {
+            logo: "/hardskills/typescript.png",
+            title: "TypeScript",
+          },
+          {
+            logo: "/hardskills/mysql.png",
+            title: "SQL Server",
+          },
+          {
+            logo: "/hardskills/nextjs.png",
+            title: "NextJs",
+          },
+          {
+            logo: "/hardskills/dotnet.png",
+            title: ".NET Core",
+          },
+          {
+            logo: "/hardskills/docker.png",
+            title: "Docker",
+          },
+        ],
+      },
+    ],
+  },
   // {
   //   id: 2,
   //   title: "PASONA THAILAND",

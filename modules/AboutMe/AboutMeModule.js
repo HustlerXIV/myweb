@@ -92,7 +92,7 @@ function AboutMeModule() {
               <br />
               Southeast Asia University
               <br />
-              Expected Graduation: 2025
+              Expected Graduation: 2026
             </Desc>
             <Desc>
               {`Bachelor's degree`}

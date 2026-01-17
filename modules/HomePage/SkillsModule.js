@@ -54,6 +54,10 @@ const SkillsData = [
         title: "TypeScript",
       },
       {
+        logo: "/hardskills/dotnet.png",
+        title: ".NET Core",
+      },
+      {
         logo: "/hardskills/php.png",
         title: "PHP",
       },
